@@ -1,0 +1,162 @@
+@import "~bootstrap/scss/bootstrap";
+// Variables
+$primaryColor : radial-gradient(circle, #414454, #323647, #393D4D);
+$secondaryColor : #282B38;
+$tersierColor : linear-gradient(180deg, #3e4253, #323647);
+$cardColor : #383b4e;
+$primaryTextColor : #00CC8F;
+$secondaryTextColor : #b5bdd6;
+*{
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+header{
+    background-image: radial-gradient(circle, #414454, #323647, #393D4D)
+}
+
+body {
+    position: relative;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+}
+// Navbar //
+.topnav {
+    a {
+        float: left;
+        display: block;
+        color: #fff !important;
+        // padding: 8px 12px;
+        text-decoration: none;
+        font-size: 1em;
+        border-bottom: 3px solid transparent;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            color: $primaryTextColor !important;
+            border-bottom: 2px solid $primaryTextColor;
+        }
+    }
+
+    .navbar-brand {
+        a {
+            color: #fff !important;
+            font-weight: 600;
+
+            span {
+                color: $primaryTextColor;
+            }
+        }
+    }
+
+
+    .navbar-nav {
+        .nav-link.active {
+            background-color: $primaryTextColor !important;
+            color: #fff !important;
+            font-weight: 600;
+            border-radius: 5px;
+            padding: 6px;
+        }
+
+        .nav-item {
+            margin: 0.5em 1em;
+        }
+    }
+}
+// End of Navbar//
+
+// Hero //
+.home {
+    overflow-x: hidden;
+
+    .jumbotron {
+        padding: 6em 2em;
+
+        .first-name {
+            color: #fff;
+            font-size: 2.2rem;
+        }
+
+        .last-name {
+            color: $primaryTextColor;
+            display: inline;
+            font-size: 2.2rem;
+        }
+
+        .title-info {
+            color: $secondaryTextColor;
+            margin-top: 35px;
+        }
+
+        .title-job {
+            white-space: nowrap;
+        }
+    }
+
+    .profile-img {
+        width: 450px;
+        margin-left: 50px;
+    }
+
+
+    .support {
+        margin-bottom: 70px;
+
+        .btn-outline-success {
+            color: $primaryTextColor !important;
+            border-color: $primaryTextColor !important;
+
+            &:hover {
+                background-color: $primaryTextColor !important;
+                border-color: $primaryTextColor !important;
+                color: #fff !important;
+            }
+        }
+
+        .btn-success {
+            min-height: 44px;
+    min-width: 44px;
+    background-color: $primaryTextColor !important;
+    border-color: $primaryTextColor !important
+        }
+    }
+
+    .icon {
+        a {
+            padding-left: 30px;
+            font-size: 30px;
+            text-decoration: none;
+            color: #fff;
+            float: left;
+            display: block;
+            padding: 8px 12px;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: $primaryTextColor;
+                border-bottom: 3px solid $primaryTextColor;
+            }
+        }
+
+        a.active {
+            border-bottom: 3px solid $primaryTextColor;
+        }
+    }
+}
+
+
+// End of Hero //
+.btn-primary{
+    background-color: $primaryTextColor !important;
+    border-color: $primaryTextColor !important;
+}
+.btn-outline-primary{
+    color: $primaryTextColor;
+    border-color: $primaryTextColor !important;
+    &:hover{
+        background-color: $primaryTextColor !important;
+    }
+}
