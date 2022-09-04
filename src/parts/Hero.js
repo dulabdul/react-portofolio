@@ -86,7 +86,6 @@ export default function Hero() {
             type='link'
             isExternal
             isPrimary
-            hasShadow
             target='_blank'
             href='https://www.youtube.com/'
           >
