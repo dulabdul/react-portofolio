@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Header from '../parts/Header';
+import Project from '../parts/Project';
 import Skills from '../parts/Skills';
-// import Hero from '../parts/Hero';
+import landingPage from '../json/landingPage.json';
 
 export default class LandingPage extends Component {
   render() {
@@ -9,6 +10,7 @@ export default class LandingPage extends Component {
       <>
         <Header {...this.props} />
         <Skills />
+        <Project data={landingPage.project} />
       </>
     );
   }
