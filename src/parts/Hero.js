@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import HeroImg from '../assets/images/icons/coding1.png';
 import { gsap } from 'gsap';
 import { TextPlugin } from 'gsap/TextPlugin';
+import Button from '../elements/Button';
 
 gsap.registerPlugin(TextPlugin);
 export default function Hero() {
@@ -72,66 +73,66 @@ export default function Hero() {
       </div>
       <div className='support'>
         <div className='button-icons'>
-          <a
-            className='btn-icons button-sm-call btn btn-outline-success text-start'
-            href='#contact'
-            role='button'
-          >
+          <Button className='btn' type='link' isTransparent hasShadow href='/'>
             <i
               className='fas fa-phone mr-1'
               style={{ fontSize: '24px' }}
               aria-hidden='true'
-            ></i>
+            ></i>{' '}
             Contact Me
-          </a>
-          <a
-            className='button-sm-call btn btn-success text-start'
-            href='#contact'
-            role='button'
+          </Button>
+          <Button
+            className='btn ms-2'
+            type='link'
+            isExternal
+            isPrimary
+            hasShadow
+            target='_blank'
+            href='https://www.youtube.com/'
           >
             <i
               className='fas fa-file-download'
               style={{ fontSize: '24px' }}
               aria-hidden='true'
             ></i>{' '}
-            Get My CV
-          </a>
+            Contact Me
+          </Button>
         </div>
         <div className='mb-3 pb-4 text-dark'>
           <div className='icon'>
-            <a
-              href='https://www.instagram.com/ar.dev21__/'
-              rel='noopener noreferrer'
-              aria-label='Instragam'
+            <Button
               className='active'
+              type='link'
+              isExternal
               target='_blank'
+              href='https://www.instagram.com/ar.dev21__/'
             >
               <i className='fab fa-instagram' aria-hidden='true'></i>
-            </a>
-            <a
-              href='https://www.linkedin.com/in/abdul-rahman-2737131a1/'
-              rel='noopener noreferrer'
-              aria-label='Linkedin'
+            </Button>
+            <Button
+              type='link'
+              isExternal
               target='_blank'
+              href='https://www.linkedin.com/in/abdul-rahman-2737131a1/'
             >
               <i className='fab fa-linkedin' aria-hidden='true'></i>
-            </a>
-            <a
-              href='https://github.com/dulabdul'
+            </Button>
+            <Button
+              type='link'
+              isExternal
               target='_blank'
-              rel='noopener noreferrer'
-              aria-label='Github'
+              href='https://github.com/dulabdul'
             >
               <i className='fab fa-github' aria-hidden='true'></i>
-            </a>
-            <a
-              href='mailto:dulabdol1331@gmail.com'
-              rel='noopener noreferrer'
-              aria-label='Email'
+            </Button>
+            <Button
+              type='link'
+              isExternal
               target='_blank'
+              href='mailto:dulabdol1331@gmail.com'
             >
               <i className='fas fa-envelope' aria-hidden='true'></i>
-            </a>
+            </Button>
           </div>
         </div>
       </div>

@@ -21,6 +21,31 @@ body {
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
 }
+@media screen and (min-width: 1400px) {
+    .container{
+        max-width: 1200px !important;
+    }
+}
+hr{
+    opacity: 1;
+}
+#project,
+#sertifikat,
+#contact {
+    padding: 2rem;
+}
+
+section {
+    overflow: hidden;
+}
+#skills,
+#project,
+#contact {
+    background-color: $secondaryColor;
+}
+#sertifikat {
+    background-image: $tersierColor;
+}
 // Navbar //
 .topnav {
     a {
@@ -115,11 +140,10 @@ body {
             }
         }
 
-        .btn-success {
+        .btn {
             min-height: 44px;
     min-width: 44px;
-    background-color: $primaryTextColor !important;
-    border-color: $primaryTextColor !important
+
         }
     }
 
@@ -149,6 +173,62 @@ body {
 
 
 // End of Hero //
+
+// Skill Section //
+.container-skills {
+    .heading-konten {
+        hr {
+            box-sizing: border-box;
+            overflow: visible;
+            margin: auto;
+            width: 60px;
+            height: 3px;
+            background-color: $primaryTextColor;
+            margin-bottom: 20px;
+        }
+    }
+
+    .bg-skills {
+        background-color: $cardColor;
+        border-radius: 10px;
+    }
+
+    .img-icons {
+        img {
+            width: 170px;
+            height: auto;
+        }
+
+        .img-svg-html {
+            filter: invert(47%) sepia(66%) saturate(3311%) hue-rotate(348deg) brightness(103%) contrast(89%);
+        }
+
+        .img-svg-css {
+            filter: invert(71%) sepia(52%) saturate(4188%) hue-rotate(166deg) brightness(92%) contrast(90%);
+        }
+
+        .img-svg-js {
+            filter: invert(91%) sepia(53%) saturate(7328%) hue-rotate(324deg) brightness(102%) contrast(102%);
+        }
+
+        .img-svg-php {
+            filter: invert(78%) sepia(63%) saturate(3480%) hue-rotate(198deg) brightness(75%) contrast(78%);
+        }
+
+        .img-svg-bts {
+            filter: invert(36%) sepia(68%) saturate(752%) hue-rotate(226deg) brightness(83%) contrast(82%);
+        }
+
+        .img-svg-git {
+            filter: invert(50%) sepia(89%) saturate(4089%) hue-rotate(343deg) brightness(96%) contrast(95%);
+        }
+
+        .img-svg-vscode {
+            filter: invert(57%) sepia(62%) saturate(1111%) hue-rotate(176deg) brightness(87%) contrast(90%);
+        }
+    }
+}
+// End Of Skills Section //
 .btn-primary{
     background-color: $primaryTextColor !important;
     border-color: $primaryTextColor !important;
