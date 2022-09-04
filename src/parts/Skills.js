@@ -20,72 +20,88 @@ export default function Skills() {
         <hr />
       </div>
       <div className='container'>
-        <div className='row justify-content-center '>
-          <div className='col'>
-            <div className='card bg-skills'>
-              <div className='card-body '>
-                <div className='col-12 img-icons'>
-                  <img
-                    src={htmlIcons}
-                    className='img-fluid img-svg-html'
-                    alt='HTML Icons'
-                  />
-                  <img
-                    src={css3Icons}
-                    className='img-fluid img-svg-css'
-                    alt='CSS Icons'
-                  />
-                  <img
-                    src={javascriptIcons}
-                    className='img-fluid img-svg-js'
-                    alt='Javascript Icons'
-                  />
-                  <img
-                    src={phpIcons}
-                    className='img-fluid img-svg-php'
-                    alt='PHP Icons'
-                  />
-                  <img
-                    src={bootstrapIcons}
-                    className='img-fluid img-svg-bts'
-                    alt='Bootstrap Icons'
-                  />
-                  <img
-                    src={gitIcons}
-                    className='img-fluid img-svg-git'
-                    alt='GIT Icons'
-                  />
-                  <img
-                    src={sassIcons}
-                    className='img-fluid img-svg-sass'
-                    alt='SASS Icons'
-                  />
-                  <img
-                    src={webpackIcons}
-                    className='img-fluid'
-                    alt='Webpack Icons'
-                  />
-                  <img
-                    src={nodejsIcons}
-                    className='img-fluid'
-                    alt='NodeJs Icons'
-                  />
-                  <img
-                    src={pwaIcons}
-                    className='img-fluid'
-                    alt='Progressive Web Apps Icons'
-                  />
-                  <img
-                    src={wordpressIcons}
-                    className='img-fluid'
-                    alt='Wordpress Icons'
-                  />
-                  <img
-                    src={reactIcons}
-                    className='img-fluid'
-                    alt='React Icons'
-                  />
-                </div>
+        <div className='card bg-skills'>
+          <div className='card-body '>
+            <div className='row justify-content-center align-items-center img-icons'>
+              <div className='col-auto'>
+                <img
+                  src={htmlIcons}
+                  className='img-fluid img-svg-html'
+                  alt='HTML Icons'
+                />
+              </div>
+              <div className='col-auto'>
+                <img
+                  src={css3Icons}
+                  className='img-fluid img-svg-css'
+                  alt='CSS Icons'
+                />
+              </div>
+              <div className='col-auto'>
+                <img
+                  src={javascriptIcons}
+                  className='img-fluid img-svg-js'
+                  alt='Javascript Icons'
+                />
+              </div>
+              <div className='col-auto'>
+                <img
+                  src={phpIcons}
+                  className='img-fluid img-svg-php'
+                  alt='PHP Icons'
+                />
+              </div>
+              <div className='col-auto'>
+                <img
+                  src={bootstrapIcons}
+                  className='img-fluid img-svg-bts'
+                  alt='Bootstrap Icons'
+                />
+              </div>
+              <div className='col-auto'>
+                <img
+                  src={gitIcons}
+                  className='img-fluid img-svg-git'
+                  alt='GIT Icons'
+                />
+              </div>
+              <div className='col-auto'>
+                <img
+                  src={sassIcons}
+                  className='img-fluid img-svg-sass'
+                  alt='SASS Icons'
+                />
+              </div>
+              <div className='col-auto'>
+                <img
+                  src={webpackIcons}
+                  className='img-fluid'
+                  alt='Webpack Icons'
+                />
+              </div>
+              <div className='col-auto'>
+                <img
+                  src={nodejsIcons}
+                  className='img-fluid'
+                  alt='NodeJs Icons'
+                />
+              </div>
+              <div className='col-auto'>
+                <img
+                  src={pwaIcons}
+                  className='img-fluid'
+                  alt='Progressive Web Apps Icons'
+                />
+              </div>
+              <div className='col-auto'>
+                <img
+                  src={wordpressIcons}
+                  className='img-fluid'
+                  alt='Wordpress Icons'
+                />
+              </div>
+              <div className='col-auto'>
+                <img src={reactIcons} className='img-fluid' alt='React Icons' />
               </div>
             </div>
           </div>
