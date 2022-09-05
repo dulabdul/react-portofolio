@@ -22,12 +22,12 @@ html {
     scroll-behavior: smooth;
 }
 header{
+    font-family: 'Arvo', serif;
     background-image: radial-gradient(circle, #414454, #323647, #393D4D)
 }
 
 body {
     position: relative;
-    font-family: 'Roboto Mono', monospace;
     font-size: 16px;
 }
 
@@ -37,6 +37,7 @@ hr{
 #project,
 #sertifikat,
 #contact {
+    font-family: 'Poppins', sans-serif;
     padding: 2rem;
 }
 
@@ -46,6 +47,7 @@ section {
 #skills,
 #project,
 #contact {
+    font-family: 'Poppins', sans-serif;
     background-color: $secondaryColor;
 }
 #sertifikat {
@@ -103,16 +105,20 @@ section {
 
     .jumbotron {
         padding: 6em 2em;
-
+        .hallo{
+            letter-spacing: 3px;
+        }
         .first-name {
             color: #fff;
             font-size: 2.2rem;
+            letter-spacing: 3px;
         }
 
         .last-name {
             color: $primaryTextColor;
             display: inline;
             font-size: 2.2rem;
+            letter-spacing: 3px;
         }
 
         .title-info {
@@ -255,7 +261,9 @@ section {
             color: #fff;
         }
         .content-overlay{
-            background: rgba(0, 204, 143, 0.521);
+            border-radius: 16px;
+            // background: rgba(0, 204, 143, 0.521);
+            background: rgba(28, 103, 88, .75);
             position: absolute;
             height: 99%;
             width: 100%;
@@ -271,7 +279,7 @@ section {
         }
         .content-image{
             width: 100%;
-            height: 400px;
+            
         }
         .content-details {
             position: absolute;
@@ -322,6 +330,15 @@ section {
                 height: 2px;
                 background-color: #fff;
                 border-top: none; 
+            }
+            p{
+                a{
+                    color: #fff;
+                    font-weight: 600;
+                    &:hover{
+                        color: #E4A11B;
+                    }
+                }
             }
           }
           .fadeIn-bottom{
