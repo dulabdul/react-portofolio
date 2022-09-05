@@ -17,9 +17,9 @@ export default function Project(props) {
           </div>
         </div>
         <div className='row'>
-          {props.data.map((project, index) => {
+          {props.data.slice(0, 6).map((project, index) => {
             return (
-              <div className='col-lg-6 col-sm-12' key={`project-${index}`}>
+              <div className='col-lg-4 mb-4 col-sm-12' key={`project-${index}`}>
                 <div className='content'>
                   <a href={`${project.urlDemo}`} target='_blank'>
                     <div className='content-overlay'></div>
@@ -39,7 +39,6 @@ export default function Project(props) {
                       <hr />
                       <hr className='ms-3' />
                       <hr className='ms-3 hr-tiga' />
-
                       {parse(project.description)}
 
                       <Button
