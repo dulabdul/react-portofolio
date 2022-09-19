@@ -1,11 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from '../elements/Button';
 import BrandText from './BrandText';
 import { useLocation } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import Hero from './Hero';
-export default function Header() {
-  const [isActive, setActive] = useState(false);
+export default function Header({ projectRef, certRef }) {
+  // console.log(document.querySelector('#nav-area'));
+  const [navScroll, setNavScrolled] = useState('scrolled');
+  const listenScrollEvent = () => {
+    window.scrollY > 50 ? setNavScrolled('scrolled') : setNavScrolled('');
+  };
+  useEffect(() => {
+    window.addEventListener('scroll', listenScrollEvent);
+    return () => {
+      window.removeEventListener('scroll', listenScrollEvent);
+    };
+  });
+  const handlerScroll = (ref) => {
+    window.scrollTo({
+      top: ref.offsetTop - 50,
+      behavior: 'smooth',
+    });
+  };
   const location = useLocation();
   const getNavLinkClass = (path) => {
     return location.pathname === path ? 'active' : '';
@@ -13,11 +29,12 @@ export default function Header() {
   return (
     <header>
       <Navbar
-        className='topnav'
+        className={`topnav fixed-top ${navScroll}`}
         collapseOnSelect
         expand='lg'
         bg='transparent'
         variant='transparent'
+        id='nav-area'
       >
         <Container>
           <Navbar.Brand>
@@ -28,9 +45,9 @@ export default function Header() {
             <Nav className='ms-auto'>
               <li className='nav-item'>
                 <Button
+                  type='link'
                   className={`nav-link ${getNavLinkClass('/')}`}
                   href='/'
-                  type='link'
                 >
                   Home
                 </Button>
@@ -39,8 +56,10 @@ export default function Header() {
                 {' '}
                 <Button
                   className={`nav-link ${getNavLinkClass('/project')}`}
-                  href='/project'
-                  type='link'
+                  onClick={() => {
+                    handlerScroll(projectRef.current);
+                  }}
+                  type='button'
                 >
                   Project
                 </Button>
@@ -48,9 +67,11 @@ export default function Header() {
               <li className='nav-item'>
                 {' '}
                 <Button
+                  type='button'
+                  onClick={() => {
+                    handlerScroll(certRef.current);
+                  }}
                   className={`nav-link ${getNavLinkClass('/certificate')}`}
-                  href='/certificate'
-                  type='link'
                 >
                   Certificate
                 </Button>
@@ -58,9 +79,8 @@ export default function Header() {
               <li className='nav-item'>
                 {' '}
                 <Button
+                  type='button'
                   className={`nav-link ${getNavLinkClass('/contact')}`}
-                  href='/contact'
-                  type='link'
                 >
                   Contact
                 </Button>

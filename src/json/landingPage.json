@@ -7,7 +7,7 @@
         "stack" : "html, css, javascript, bootstrap, webpack, nodeJS, PWA.",
         "urlDemo" : "https://infocorona-e90fb.web.app/",
         "urlGithub" : "https://github.com/dulabdul/Web_Corona_Info.git",
-        "imageUrl": "/images/project-1.png"
+        "imageUrl": "/images/project/project-1.png"
     },
     {
         "id" : "project-2",
@@ -16,7 +16,7 @@
         "stack" : "html, css, javascript, webpack, nodeJS, PWA, Web Component, Codecept, karma",
         "urlDemo" : "https://theresto-fc91d.web.app/",
         "urlGithub" : "https://github.com/dulabdul/The-Resto.git",
-        "imageUrl": "/images/project-3.png"
+        "imageUrl": "/images/project/project-3.png"
     },
     {
         "id" : "project-3",
@@ -25,7 +25,7 @@
         "stack" : "html, css, javascript, materialize, webpack, nodeJS, PWA, push notification",
         "urlDemo" : "https://nonton-kuy.web.app/",
         "urlGithub" : "https://github.com/dulabdul/movie-katalog.git",
-        "imageUrl": "/images/project-8.png"
+        "imageUrl": "/images/project/project-8.png"
     },
     
     {
@@ -35,7 +35,7 @@
         "stack" : "Html, Css, Javascript, MongoDb, ExpressJs, ReactJS, NodeJs.",
         "urlDemo" : "http://tripvacation.herokuapp.com/",
         "urlGithub" : "https://github.com/dulabdul/MERN-TripVacation",
-        "imageUrl": "/images/project-11.png"
+        "imageUrl": "/images/project/project-11.png"
     },
     {
         "id" : "project-5",
@@ -44,7 +44,7 @@
         "stack" : "Html, Css, Javascript, MongoDb, ExpressJs, ReactJS, NodeJs, EJS.",
         "urlDemo" : "http://tripvacation-admin.herokuapp.com/admin/login",
         "urlGithub" : "https://github.com/dulabdul/MERN-TripVacation/tree/server-tripvacation",
-        "imageUrl": "/images/project-10.png"
+        "imageUrl": "/images/project/project-10.png"
     },
     {
         "id" : "project-6",
@@ -53,7 +53,7 @@
         "stack" : "Html, Css, Javascript, MongoDb, ExpressJs, ReactJS, NodeJs, EJS.",
         "urlDemo" : "https://notes-apps-ebcb9.web.app/",
         "urlGithub" : "https://github.com/dulabdul/react-pemula-dicoding",
-        "imageUrl": "/images/project-12.png"
+        "imageUrl": "/images/project/project-12.png"
     },
     {
         "id" : "project-7",
@@ -62,7 +62,7 @@
         "stack" : "html, css, javascript",
         "urlDemo" : "https://creavtech.web.app/",
         "urlGithub" : "https://github.com/dulabdul/Submission_pemprogaman_dasar_web.git",
-        "imageUrl": "/images/project-4.png"
+        "imageUrl": "/images/project/project-4.png"
     },
     {
         "id" : "project-8",
@@ -71,7 +71,7 @@
         "stack" : "html, css, javascript, SweetAlert",
         "urlDemo" : "https://bookself-apps.web.app/",
         "urlGithub" : "https://github.com/dulabdul/Bookself-Apps-Dicoding.git",
-        "imageUrl": "/images/project-5.png"
+        "imageUrl": "/images/project/project-5.png"
     },
     {
         "id" : "project-9",
@@ -80,7 +80,7 @@
         "stack" : "html, css, javascript, materialize, webpack, nodeJS, PWA, push notification",
         "urlDemo" : "https://mysoccer-584dc.web.app/",
         "urlGithub" : "https://github.com/dulabdul/PWA-Dicoding-MySoccer.git",
-        "imageUrl": "/images/project-6.png"
+        "imageUrl": "/images/project/project-6.png"
     },
     {
         "id" : "project-10",
@@ -89,7 +89,7 @@
         "stack" : "wordpress.",
         "urlDemo" : "https://publiknasional.com/",
         "urlGithub" : "#",
-        "imageUrl": "/images/project-7.png"
+        "imageUrl": "/images/project/project-7.png"
     },
     {
         "id" : "project-11",
@@ -98,8 +98,79 @@
         "stack" : "html, css, javascript, php, mySQL",
         "urlDemo" : "https://abdul-sipus.000webhostapp.com/",
         "urlGithub" : "https://github.com/dulabdul/digital-sipus.git",
-        "imageUrl": "/images/project-9.png"
+        "imageUrl": "/images/project/project-9.png"
     }
-
+],
+    "certificate" : [
+        {
+        "id" : "cert-1",
+        "title" : "Learn Solid Programming Principles",
+        "platform" : "dicoding indonesia",
+        "imageUrl" : "/images/certificate/solid.jpg",
+        "credentialUrl" : "https://www.dicoding.com/certificates/L4PQM1E92ZO1" 
+    },
+        {
+        "id" : "cert-2",
+        "title" : "Learn Basic Web Progamming",
+        "platform" : "dicoding indonesia",
+        "imageUrl" : "/images/certificate/dasar-web.jpg",
+        "credentialUrl" : "https://www.dicoding.com/certificates/2VX31YD83ZYQ" 
+    },
+        {
+        "id" : "cert-3",
+        "title" : "Learn Basic Javascript Programming",
+        "platform" : "dicoding indonesia",
+        "imageUrl" : "/images/certificate/dasar-javascript.jpg",
+        "credentialUrl" : "https://www.dicoding.com/certificates/1OP8616L2XQK" 
+    },
+        {
+        "id" : "cert-4",
+        "title" : "Learn to Create Web Front-End For Beginners",
+        "platform" : "dicoding indonesia",
+        "imageUrl" : "/images/certificate/fundamental-pemula.jpg",
+        "credentialUrl" : "https://www.dicoding.com/certificates/NVP7K7KGOZR0" 
+    },
+        {
+        "id" : "cert-5",
+        "title" : "Learn Front-End Web Development Fundamentals",
+        "platform" : "dicoding indonesia",
+        "imageUrl" : "/images/certificate/fundamental.jpg",
+        "credentialUrl" : "https://www.dicoding.com/certificates/GRX5GO3WVX0M" 
+    },
+        {
+        "id" : "cert-6",
+        "title" : "Learn to Build Web Apps with React",
+        "platform" : "dicoding indonesia",
+        "imageUrl" : "/images/certificate/react-pemula.jpg",
+        "credentialUrl" : "https://www.dicoding.com/certificates/GRX5LOLLRP0M" 
+    },
+        {
+        "id" : "cert-7",
+        "title" : "Build Progressive Web Apps",
+        "platform" : "dicoding indonesia",
+        "imageUrl" : "/images/certificate/mpwa.jpg",
+        "credentialUrl" : "https://www.dicoding.com/certificates/L4PQM1E92ZO1" 
+    },
+        {
+        "id" : "cert-8",
+        "title" : "Become a Front-End Web Developer Exper",
+        "platform" : "dicoding indonesia",
+        "imageUrl" : "/images/certificate/mfwde.jpg",
+        "credentialUrl" : "https://www.dicoding.com/certificates/MEPJLEER6Z3V" 
+    },
+        {
+        "id" : "cert-9",
+        "title" : "Junior Web Developer",
+        "platform" : "Indonesian Professional Certification Authority",
+        "imageUrl" : "/images/certificate/bnsp-jrweb.jpg",
+        "credentialUrl" : null 
+    },
+        {
+        "id" : "cert-10",
+        "title" : "Full-Stack Javascript Developer",
+        "platform" : "Buildwithangga Indonesia",
+        "imageUrl" : "/images/certificate/mern-bwa.jpg",
+        "credentialUrl" : null 
+    }
 ]
 }

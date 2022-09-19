@@ -7,7 +7,7 @@ $cardColor : #383b4e;
 $primaryTextColor : #00CC8F;
 $secondaryTextColor : #b5bdd6;
 $theme-colors: (
-    'primary' : #00CC8F
+    'primary' : #00CC8F,
 );
 
 /* import bootstrap to set changes */
@@ -30,7 +30,10 @@ body {
     position: relative;
     font-size: 16px;
 }
-
+.scrolled {
+    background-color: #474d66 !important;
+    transition: all 0.3s linear;
+}
 hr{
     opacity: 1;
 }
@@ -55,12 +58,24 @@ section {
 }
 // Navbar //
 .topnav {
-    a {
+    a{
         float: left;
         display: block;
+        border: none;
         color: #fff !important;
-        // padding: 8px 12px;
         text-decoration: none;
+        font-size: 1em;
+        &:hover {
+            color: $primaryTextColor !important;
+            border-bottom: 2px solid $primaryTextColor;
+        }
+    }
+    button {
+        background: transparent;
+        float: left;
+        display: block;
+        border: none;
+        color: #fff !important;
         font-size: 1em;
         border-bottom: 3px solid transparent;
         transition: all 0.2s ease-in-out;
@@ -362,6 +377,13 @@ section {
                 overflow: hidden;
             }
         }
+    }
+}
+
+// Cert Section
+.cert-section{
+    .cert-section__title{
+        color: $primaryTextColor;
     }
 }
 // End of Project Section //

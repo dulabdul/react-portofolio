@@ -36,12 +36,6 @@ export default function Hero() {
       text: 'Turning your idea into a cool produk with a good web developer. Iam here to help your to turning idea to amazing product',
     });
   });
-  // function showContent() {
-  //     window.scrollTo({
-  //       top: props.refMostPicked.current.offsetTop - 30,
-  //       behavior: 'smooth',
-  //     });
-  //   }
   return (
     <div className='container home' id='home'>
       <div className='jumbotron bg-transparent'>
