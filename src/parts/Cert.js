@@ -1,16 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Lightbox from 'react-image-lightbox';
 import Button from '../elements/Button';
 import 'react-image-lightbox/style.css';
-export default function Cert({ data, certRef }) {
-  console.log(data.length);
+export default function Cert({ data, certRef, hideNavRef }) {
   const [indexOfImages, setIndexOfImages] = useState(0);
   const [showModal, setShowModal] = useState(false);
   const openModalAndSetIndex = (index) => {
     setIndexOfImages(index);
     setShowModal(true);
+    const ref = hideNavRef.current;
+    ref.style.display = 'none';
     return;
   };
+  const modalOpenHandler = () => {
+    setShowModal(true);
+    const ref = hideNavRef.current;
+    ref.style.display = 'none';
+  };
+  useEffect(() => {
+    if (showModal === false) {
+      const ref = hideNavRef.current;
+      ref.style.display = 'block';
+      return;
+    }
+  }, [showModal, hideNavRef]);
+
   return (
     <section id='project' ref={certRef} className='container-project pb-5'>
       <div className='container cert-section'>
@@ -51,7 +65,12 @@ export default function Cert({ data, certRef }) {
             })}
           </div>
           <div>
-            <button type='button' onClick={() => setShowModal(true)}>
+            <button
+              type='button'
+              onClick={() => {
+                modalOpenHandler();
+              }}
+            >
               Show Lightbox
             </button>
           </div>

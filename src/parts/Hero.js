@@ -88,7 +88,7 @@ export default function Hero() {
               style={{ fontSize: '24px' }}
               aria-hidden='true'
             ></i>{' '}
-            Contact Me
+            Get My CV
           </Button>
         </div>
         <div className='mb-3 pb-4 text-dark'>

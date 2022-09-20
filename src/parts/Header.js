@@ -4,8 +4,7 @@ import BrandText from './BrandText';
 import { useLocation } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import Hero from './Hero';
-export default function Header({ projectRef, certRef }) {
-  // console.log(document.querySelector('#nav-area'));
+export default function Header({ projectRef, certRef, hideNavRef }) {
   const [navScroll, setNavScrolled] = useState('scrolled');
   const listenScrollEvent = () => {
     window.scrollY > 50 ? setNavScrolled('scrolled') : setNavScrolled('');
@@ -35,6 +34,7 @@ export default function Header({ projectRef, certRef }) {
         bg='transparent'
         variant='transparent'
         id='nav-area'
+        ref={hideNavRef}
       >
         <Container>
           <Navbar.Brand>

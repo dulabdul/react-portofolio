@@ -1,4 +1,4 @@
-import React, { Component, useRef } from 'react';
+import React, { useRef } from 'react';
 import Header from '../parts/Header';
 import Project from '../parts/Project';
 import Skills from '../parts/Skills';
@@ -8,12 +8,21 @@ import Cert from '../parts/Cert';
 export default function LandingPage() {
   const projectRef = useRef(null);
   const certRef = useRef(null);
+  const hideNavRef = useRef(null);
   return (
     <>
-      <Header certRef={certRef} projectRef={projectRef} />
+      <Header
+        hideNavRef={hideNavRef}
+        certRef={certRef}
+        projectRef={projectRef}
+      />
       <Skills />
       <Project projectRef={projectRef} data={landingPage.project} />
-      <Cert certRef={certRef} data={landingPage.certificate} />
+      <Cert
+        hideNavRef={hideNavRef}
+        certRef={certRef}
+        data={landingPage.certificate}
+      />
     </>
   );
 }
