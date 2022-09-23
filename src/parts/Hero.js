@@ -3,7 +3,14 @@ import HeroImg from '../assets/images/icons/coding1.png';
 import { gsap } from 'gsap';
 import { TextPlugin } from 'gsap/TextPlugin';
 import Button from '../elements/Button';
-
+import {
+  FaPhone,
+  FaFileDownload,
+  FaInstagram,
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+} from 'react-icons/fa';
 gsap.registerPlugin(TextPlugin);
 export default function Hero() {
   const haloRef = useRef();
@@ -57,23 +64,14 @@ export default function Hero() {
             <p className='title-info text-capitalize' ref={titleInfo}></p>
           </div>
           <div className='col-md-6 mt-4'>
-            <img
-              src={HeroImg}
-              alt='Hero Image'
-              className='profile-img img-fluid'
-            />
+            <img src={HeroImg} alt='Hero' className='profile-img img-fluid' />
           </div>
         </div>
       </div>
       <div className='support'>
         <div className='button-icons'>
           <Button className='btn' type='link' isTransparent hasShadow href='/'>
-            <i
-              className='fas fa-phone mr-1'
-              style={{ fontSize: '24px' }}
-              aria-hidden='true'
-            ></i>{' '}
-            Contact Me
+            <FaPhone style={{ fontSize: 24 }} /> Contact Me
           </Button>
           <Button
             className='btn ms-2'
@@ -83,12 +81,7 @@ export default function Hero() {
             target='_blank'
             href='https://www.youtube.com/'
           >
-            <i
-              className='fas fa-file-download'
-              style={{ fontSize: '24px' }}
-              aria-hidden='true'
-            ></i>{' '}
-            Get My CV
+            <FaFileDownload style={{ fontSize: 24 }} /> Get My CV
           </Button>
         </div>
         <div className='mb-3 pb-4 text-dark'>
@@ -100,7 +93,7 @@ export default function Hero() {
               target='_blank'
               href='https://www.instagram.com/ar.dev21__/'
             >
-              <i className='fab fa-instagram' aria-hidden='true'></i>
+              <FaInstagram />
             </Button>
             <Button
               type='link'
@@ -108,7 +101,7 @@ export default function Hero() {
               target='_blank'
               href='https://www.linkedin.com/in/abdul-rahman-2737131a1/'
             >
-              <i className='fab fa-linkedin' aria-hidden='true'></i>
+              <FaLinkedin />
             </Button>
             <Button
               type='link'
@@ -116,7 +109,7 @@ export default function Hero() {
               target='_blank'
               href='https://github.com/dulabdul'
             >
-              <i className='fab fa-github' aria-hidden='true'></i>
+              <FaGithub />
             </Button>
             <Button
               type='link'
@@ -124,7 +117,7 @@ export default function Hero() {
               target='_blank'
               href='mailto:dulabdol1331@gmail.com'
             >
-              <i className='fas fa-envelope' aria-hidden='true'></i>
+              <FaEnvelope />
             </Button>
           </div>
         </div>

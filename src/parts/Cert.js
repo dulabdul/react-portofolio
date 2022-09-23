@@ -36,10 +36,10 @@ export default function Cert({ data, certRef, hideNavRef }) {
             <hr />
           </div>
           <div className='row'>
-            {data.map((cert, index) => {
+            {data.slice(0, 6).map((cert, index) => {
               return (
                 <div className='col-md-4 mb-3' key={`certificate-${index}`}>
-                  <div>
+                  <div className='img-cert__wrapper'>
                     <Button
                       isExternal
                       type='link'
@@ -64,15 +64,20 @@ export default function Cert({ data, certRef, hideNavRef }) {
               );
             })}
           </div>
-          <div>
-            <button
+          <div className='text-center'>
+            <Button
               type='button'
+              style={{ color: '#fff' }}
+              className='btn'
+              isTransparent
+              isExternal
+              isLarge
               onClick={() => {
                 modalOpenHandler();
               }}
             >
-              Show Lightbox
-            </button>
+              Show All
+            </Button>
           </div>
         </div>
         {showModal && (

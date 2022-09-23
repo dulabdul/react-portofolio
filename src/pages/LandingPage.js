@@ -4,17 +4,19 @@ import Project from '../parts/Project';
 import Skills from '../parts/Skills';
 import landingPage from '../json/landingPage.json';
 import Cert from '../parts/Cert';
-
+import Contacs from '../parts/Contacs';
 export default function LandingPage() {
   const projectRef = useRef(null);
   const certRef = useRef(null);
   const hideNavRef = useRef(null);
+  const contacsRef = useRef(null);
   return (
     <>
       <Header
         hideNavRef={hideNavRef}
         certRef={certRef}
         projectRef={projectRef}
+        contacsRef={contacsRef}
       />
       <Skills />
       <Project projectRef={projectRef} data={landingPage.project} />
@@ -23,6 +25,7 @@ export default function LandingPage() {
         certRef={certRef}
         data={landingPage.certificate}
       />
+      <Contacs contacsRef={contacsRef} />
     </>
   );
 }

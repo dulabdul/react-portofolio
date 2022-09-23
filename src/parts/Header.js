@@ -4,7 +4,12 @@ import BrandText from './BrandText';
 import { useLocation } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import Hero from './Hero';
-export default function Header({ projectRef, certRef, hideNavRef }) {
+export default function Header({
+  projectRef,
+  certRef,
+  hideNavRef,
+  contacsRef,
+}) {
   const [navScroll, setNavScrolled] = useState('scrolled');
   const listenScrollEvent = () => {
     window.scrollY > 50 ? setNavScrolled('scrolled') : setNavScrolled('');
@@ -80,6 +85,9 @@ export default function Header({ projectRef, certRef, hideNavRef }) {
                 {' '}
                 <Button
                   type='button'
+                  onClick={() => {
+                    handlerScroll(contacsRef.current);
+                  }}
                   className={`nav-link ${getNavLinkClass('/contact')}`}
                 >
                   Contact

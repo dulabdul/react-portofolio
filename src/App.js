@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.scss';
+import './assets/styles/App.scss';
 import { Routes, Route } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 function App() {
