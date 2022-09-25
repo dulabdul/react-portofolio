@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../elements/Button';
 import parse from 'html-react-parser';
+
 export default function DetailProject({ projectRef, data }) {
   return (
     <>
@@ -26,7 +27,12 @@ export default function DetailProject({ projectRef, data }) {
                   key={`project-${index}`}
                 >
                   <div className='content'>
-                    <a href={`${project.urlDemo}`} target='_blank'>
+                    <Button
+                      type='link'
+                      isExternal
+                      target='_blank'
+                      href={`${project.urlDemo}`}
+                    >
                       <div className='content-overlay'></div>
                       <img
                         className='content-image'
@@ -77,7 +83,7 @@ export default function DetailProject({ projectRef, data }) {
                           Github
                         </Button>
                       </div>
-                    </a>
+                    </Button>
                     <span className='text-center title-content'>
                       {project.title}
                     </span>
