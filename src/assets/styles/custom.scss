@@ -154,7 +154,10 @@ section {
 
     .support {
         margin-bottom: 70px;
-
+        .button-icons{
+            display: flex;
+            align-items: center;
+        }
         .btn-outline-success {
             color: $primaryTextColor !important;
             border-color: $primaryTextColor !important;
@@ -168,8 +171,14 @@ section {
 
         .btn {
             min-height: 44px;
-    min-width: 44px;
-
+            min-width: 44px;
+            display: flex;
+            align-items: center;
+           
+                svg{
+                    margin-right: 6px;
+                }
+         
         }
     }
 

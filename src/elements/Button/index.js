@@ -45,6 +45,7 @@ export default function Button(props) {
       className={className.join(' ')}
       style={props.style}
       onClick={onClick}
+      ref={props.ref}
     >
       {props.children}
     </button>
@@ -64,4 +65,5 @@ Button.propTypes = {
   isBlock: propTypes.bool,
   isExternal: propTypes.bool,
   isTransparent: propTypes.bool,
+  ref: propTypes.func,
 };

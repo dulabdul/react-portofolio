@@ -12,7 +12,13 @@ import {
   FaEnvelope,
 } from 'react-icons/fa';
 gsap.registerPlugin(TextPlugin);
-export default function Hero() {
+export default function Hero({ contacsRef }) {
+  const handlerScroll = (ref) => {
+    window.scrollTo({
+      top: ref.offsetTop - 50,
+      behavior: 'smooth',
+    });
+  };
   const haloRef = useRef();
   useEffect(() => {
     gsap.to(haloRef.current, { duration: 1.2, delay: 1, text: 'Hi,Iam' });
@@ -70,7 +76,15 @@ export default function Hero() {
       </div>
       <div className='support'>
         <div className='button-icons'>
-          <Button className='btn' type='link' isTransparent hasShadow href='/'>
+          <Button
+            type='button'
+            className='btn'
+            onClick={() => {
+              handlerScroll(contacsRef.current);
+            }}
+            isTransparent
+            hasShadow
+          >
             <FaPhone style={{ fontSize: 24 }} /> Contact Me
           </Button>
           <Button
@@ -79,7 +93,7 @@ export default function Hero() {
             isExternal
             isPrimary
             target='_blank'
-            href='https://www.youtube.com/'
+            href='https://drive.google.com/file/d/1I7VNLgzXghTGO28GRo-8CJMOT3Hqb4DB/view?usp=sharing'
           >
             <FaFileDownload style={{ fontSize: 24 }} /> Get My CV
           </Button>
