@@ -12,7 +12,7 @@
     {
         "id" : "project-2",
         "title" : "The Resto",
-        "description" : "<p>Final Project 'Menjadi Front-End Developer Expert' di <a target='_blank' href='https://www.https://www.dicoding.com'>Dicoding Indonesia </a>. Menampilkan list restaurant, fitur liked restaurant, fitur search.</p>",
+        "description" : "<p>Final Project 'Menjadi Front-End Developer Expert' di <a target='_blank' href='https://www.dicoding.com'>Dicoding Indonesia </a>. Menampilkan list restaurant, fitur liked restaurant, fitur search.</p>",
         "stack" : "html, css, javascript, webpack, nodeJS, PWA, Web Component, Codecept, karma",
         "urlDemo" : "https://theresto-fc91d.web.app/",
         "urlGithub" : "https://github.com/dulabdul/The-Resto.git",

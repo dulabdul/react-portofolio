@@ -6,6 +6,7 @@ import landingPage from '../json/landingPage.json';
 import Cert from '../parts/Cert';
 import Contacs from '../parts/Contacs';
 import Hero from '../parts/Hero';
+import Footer from '../parts/Footer';
 export default function LandingPage() {
   const projectRef = useRef(null);
   const certRef = useRef(null);
@@ -32,6 +33,7 @@ export default function LandingPage() {
         />
         <Contacs contacsRef={contacsRef} />
       </main>
+      <Footer />
     </>
   );
 }

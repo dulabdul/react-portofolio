@@ -1,14 +1,14 @@
 import React from 'react';
 import Button from '../elements/Button';
 import parse from 'html-react-parser';
-export default function Project({ projectRef, data }) {
+export default function DetailProject({ projectRef, data }) {
   return (
     <>
       {' '}
       <section id='project' className='container-project pb-5' ref={projectRef}>
         <div className='container'>
           <div className='row'>
-            <div className='col-12 heading-konten mb-2'>
+            <div className='col-12 heading-konten mt-5 mb-2'>
               <h2 className='text-center mt-2 font-weight-bold text-white heading__tagline'>
                 Check Out
               </h2>
@@ -19,7 +19,7 @@ export default function Project({ projectRef, data }) {
             </div>
           </div>
           <div className='row'>
-            {data.slice(0, 6).map((project, index) => {
+            {data.map((project, index) => {
               return (
                 <div
                   className='col-lg-4 mb-4 col-sm-12'
@@ -85,20 +85,6 @@ export default function Project({ projectRef, data }) {
                 </div>
               );
             })}
-            <div className='col-12 m-auto text-center'>
-              <Button
-                style={{ color: '#fff' }}
-                className='btn'
-                isTransparent
-                isExternal
-                type='link'
-                isLarge
-                href='/detail'
-                target='_blank'
-              >
-                Show All
-              </Button>
-            </div>
           </div>
         </div>
       </section>

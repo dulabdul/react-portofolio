@@ -8,6 +8,7 @@ export default function Header({
   certRef,
   hideNavRef,
   contacsRef,
+  isCentered,
 }) {
   const [navScroll, setNavScrolled] = useState(null);
   const listenScrollEvent = () => {
@@ -29,6 +30,33 @@ export default function Header({
   const getNavLinkClass = (path) => {
     return location.pathname === path ? 'active' : '';
   };
+  if (isCentered) {
+    return (
+      <Navbar
+        className='topnav fixed-top'
+        expand='lg'
+        bg='dark'
+        variant='light'
+      >
+        <Container>
+          <Navbar.Brand>
+            <BrandText />
+          </Navbar.Brand>
+          <Nav className='ms-auto'>
+            <li className='nav-item'>
+              <Button
+                type='link'
+                className={`nav-link ${getNavLinkClass('/')}`}
+                href='/'
+              >
+                Home
+              </Button>
+            </li>
+          </Nav>
+        </Container>
+      </Navbar>
+    );
+  }
   return (
     <Navbar
       className={`topnav fixed-top ${navScroll}`}

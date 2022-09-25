@@ -26,7 +26,7 @@ export default function Cert({ data, certRef, hideNavRef }) {
   }, [showModal, hideNavRef]);
 
   return (
-    <section id='project' ref={certRef} className='container-project pb-5'>
+    <section id='sertifikat' ref={certRef} className='container-project pb-5'>
       <div className='container cert-section'>
         <div className='row'>
           <div className='col-12 heading-konten mb-2'>
@@ -35,54 +35,57 @@ export default function Cert({ data, certRef, hideNavRef }) {
             </h2>
             <hr />
           </div>
-          <div className='row'>
-            {data.slice(0, 6).map((cert, index) => {
-              return (
-                <div className='col-md-4 mb-3' key={`certificate-${index}`}>
-                  <div className='img-cert__wrapper'>
-                    <Button
-                      isExternal
-                      type='link'
-                      href={cert.credentialUrl}
-                      target='_blank'
-                    >
-                      <img
-                        src={cert.imageUrl}
-                        alt={cert.title}
-                        onClick={() => openModalAndSetIndex(index)}
-                        className='project-img img-fluid'
-                      />
-                    </Button>
-                  </div>
-                  <p className='font-weight-bold cert-section__title text-capitalize'>
-                    {cert.title}
-                    <span className='d-block font-weight-light text-white text-capitalize'>
-                      {cert.platform}
-                    </span>
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-          <div className='text-center'>
-            <Button
-              type='button'
-              style={{ color: '#fff' }}
-              className='btn'
-              isTransparent
-              isExternal
-              isLarge
-              onClick={() => {
-                modalOpenHandler();
-              }}
-            >
-              Show All
-            </Button>
-          </div>
         </div>
+        <div className='row justify-content-center align-items-center'>
+          {data.slice(0, 6).map((cert, index) => {
+            return (
+              <div className='col-md-4 mb-3' key={`certificate-${index}`}>
+                <div className='img-cert__wrapper'>
+                  <Button
+                    isExternal
+                    type='link'
+                    href={cert.credentialUrl}
+                    target='_blank'
+                  >
+                    <img
+                      src={cert.imageUrl}
+                      alt={cert.title}
+                      onClick={() => openModalAndSetIndex(index)}
+                      className='project-img img-fluid'
+                    />
+                  </Button>
+                </div>
+                <p className='font-weight-bold cert-section__title text-capitalize'>
+                  {cert.title}
+                  <span className='d-block font-weight-light text-white text-capitalize'>
+                    {cert.platform}
+                  </span>
+                </p>
+              </div>
+            );
+          })}
+        </div>
+        <div className='text-center'>
+          <Button
+            type='button'
+            style={{ color: '#fff' }}
+            className='btn'
+            isTransparent
+            isExternal
+            isLarge
+            onClick={() => {
+              modalOpenHandler();
+            }}
+          >
+            Show All
+          </Button>
+        </div>
+
         {showModal && (
           <Lightbox
             mainSrc={data[indexOfImages].imageUrl}
+            imageTitle={`${indexOfImages + 1} / ${data.length}`}
+            imageCaption={data[indexOfImages].title}
             nextSrc={data[(indexOfImages + 1) % data.length].imageUrl}
             prevSrc={
               data[(indexOfImages + data.length - 1) % data.length].imageUrl

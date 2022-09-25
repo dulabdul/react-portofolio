@@ -21,10 +21,6 @@ $theme-colors: (
 html {
     scroll-behavior: smooth;
 }
-header{
-    font-family: 'Arvo', serif;
-    background-image: radial-gradient(circle, #414454, #323647, #393D4D)
-}
 
 body {
     position: relative;
@@ -57,58 +53,66 @@ section {
     background-image: $tersierColor;
 }
 // Navbar //
-.topnav {
-    a{
-        float: left;
-        display: block;
-        border: none;
-        color: #fff !important;
-        text-decoration: none;
-        font-size: 1em;
-        &:hover {
-            color: $primaryTextColor !important;
-            border-bottom: 2px solid $primaryTextColor;
-        }
+header{
+    font-family: 'Arvo', serif;
+    background-image: radial-gradient(circle, #414454, #323647, #393D4D);
+    .bg-dark{
+        background-color: #474d66 !important;
     }
-    button {
-        background: transparent;
-        float: left;
-        display: block;
-        border: none;
-        color: #fff !important;
-        font-size: 1em;
-        border-bottom: 3px solid transparent;
-        transition: all 0.2s ease-in-out;
-
-        &:hover {
-            color: $primaryTextColor !important;
-            border-bottom: 2px solid $primaryTextColor;
-        }
-    }
-
-    .navbar-brand {
-        a {
+    .topnav {
+      
+        a{
+            float: left;
+            display: block;
+            border: none;
             color: #fff !important;
-            font-weight: 600;
-
-            span {
-                color: $primaryTextColor;
+            text-decoration: none;
+            font-size: 1em;
+            &:hover {
+                color: $primaryTextColor !important;
+                border-bottom: 2px solid $primaryTextColor;
             }
         }
-    }
-
-
-    .navbar-nav {
-        .nav-link.active {
-            background-color: $primaryTextColor !important;
+        button {
+            background: transparent;
+            float: left;
+            display: block;
+            border: none;
             color: #fff !important;
-            font-weight: 600;
-            border-radius: 5px;
-            padding: 6px;
+            font-size: 1em;
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s ease-in-out;
+    
+            &:hover {
+                color: $primaryTextColor !important;
+                border-bottom: 2px solid $primaryTextColor;
+            }
         }
-
-        .nav-item {
-            margin: 0.5em 1em;
+    
+        .navbar-brand {
+            a {
+                color: #fff !important;
+                font-weight: 600;
+    
+                span {
+                    color: $primaryTextColor;
+                }
+            }
+        }
+    
+    
+        .navbar-nav {
+            .nav-link.active {
+                background-color: $primaryTextColor !important;
+                color: #fff !important;
+                font-weight: 600;
+                border-radius: 5px;
+                padding: 6px;
+            }
+    
+            .nav-item {
+                margin: 0.5em 1em;
+            }
         }
     }
 }
@@ -590,6 +594,22 @@ section {
     }
 }
 // End of Contacs
+// Footer
+.footer {
+    background-color: $secondaryColor;
+    display: block;
+
+    p {
+        font-weight: 400;
+        font-style: italic;
+        font-size: 18px;
+        
+        svg {
+            color: #FF819F;
+        }
+    }
+}
+// End of Footer
 .btn-primary{
     color: #fff !important;
     border-color: $primaryTextColor !important;
@@ -600,4 +620,63 @@ section {
     &:hover{
         color: #fff;
     }
+}
+
+// Responsive Breakpoints
+
+// Mobiles
+@media screen and (max-width: 576px) {
+    header {
+        .home {
+            .profile-img {
+                margin: auto;
+            }
+        }
+
+    }
+
+    .container-skills {
+        .img-icons {
+            img {
+                width: 130px;
+            }
+        }
+    }
+
+    #project,
+    #sertifikat,
+    #contact {
+        padding: 1rem;
+    }
+
+    .card-project {
+        width: 85%;
+        margin: auto;
+    }
+
+    .card-title {
+        font-weight: 600;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 576px) {
+    header {
+        .home {
+            .profile-img {
+                margin: auto;
+            }
+        }
+
+    }
+
+    .img-icons img {
+        margin-left: 35px;
+    }
+
+    .card-project {
+        width: 95%;
+        margin: auto;
+    }
+
 }
