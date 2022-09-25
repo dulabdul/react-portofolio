@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Header from '../parts/Header';
 import Project from '../parts/Project';
 import Skills from '../parts/Skills';
@@ -8,6 +8,9 @@ import Contacs from '../parts/Contacs';
 import Hero from '../parts/Hero';
 import Footer from '../parts/Footer';
 export default function LandingPage() {
+  useEffect(() => {
+    document.title = 'Portofolio | Home';
+  });
   const projectRef = useRef(null);
   const certRef = useRef(null);
   const hideNavRef = useRef(null);
