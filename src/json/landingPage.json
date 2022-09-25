@@ -49,10 +49,10 @@
     {
         "id" : "project-6",
         "title" : "Notes App",
-        "description" : "<p>Project simple dengan React JS. Memiliki fitur CRUD Javascript, search notes, dan archived notes.",
+        "description" : "<p>Project simple dengan React JS. Memiliki fitur CRUD Javascript, search notes, archived notes, dan fitur login.",
         "stack" : "Html, Css, Javascript, MongoDb, ExpressJs, ReactJS, NodeJs, EJS.",
-        "urlDemo" : "https://notes-apps-ebcb9.web.app/",
-        "urlGithub" : "https://github.com/dulabdul/react-pemula-dicoding",
+        "urlDemo" : "https://react-notes-apps.herokuapp.com/",
+        "urlGithub" : "https://github.com/dulabdul/notes-app-react",
         "imageUrl": "/images/project/project-12.png"
     },
     {
@@ -97,7 +97,7 @@
         "description" : "<p>Project sistem informasi perpustakaan dibangun dengan native PHP</p>",
         "stack" : "html, css, javascript, php, mySQL",
         "urlDemo" : "https://abdul-sipus.000webhostapp.com/",
-        "urlGithub" : "https://github.com/dulabdul/digital-sipus.git",
+        "urlGithub" : "https://github.com/dulabdul/Sistem-informasi-Perpustakaan",
         "imageUrl": "/images/project/project-9.png"
     }
 ],
