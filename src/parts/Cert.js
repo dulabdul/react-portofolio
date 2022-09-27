@@ -38,10 +38,10 @@ export default function Cert({ data, certRef, hideNavRef }) {
           </div>
         </div>
         <div className='row justify-content-center align-items-center'>
-          {data.slice(0, 6).map((cert, index) => {
+          {data.map((cert, index) => {
             return (
               <div className='col-md-4 mb-3' key={`certificate-${index}`}>
-                <Fade big delay={350 * index}>
+                <Fade big delay={300 * index}>
                   <div className='img-cert__wrapper'>
                     <Button
                       isExternal

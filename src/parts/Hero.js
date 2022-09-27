@@ -70,7 +70,7 @@ export default function Hero({ contacsRef }) {
             ></h2>
             <p className='title-info text-capitalize' ref={titleInfo}></p>
           </div>
-          <Fade right big delay={400}>
+          <Fade right big delay={450}>
             <div className='col-md-6 mt-4'>
               <img src={HeroImg} alt='Hero' className='profile-img img-fluid' />
             </div>

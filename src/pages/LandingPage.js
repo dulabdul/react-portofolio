@@ -7,9 +7,11 @@ import Cert from '../parts/Cert';
 import Contacs from '../parts/Contacs';
 import Hero from '../parts/Hero';
 import Footer from '../parts/Footer';
+import ScrollToTop from '../parts/ScrollToTop';
 export default function LandingPage() {
   useEffect(() => {
     document.title = 'Portofolio | Home';
+    window.scrollTo(0, 0);
   });
   const projectRef = useRef(null);
   const certRef = useRef(null);
@@ -17,6 +19,7 @@ export default function LandingPage() {
   const contacsRef = useRef(null);
   return (
     <>
+      <ScrollToTop />
       <header>
         <Header
           hideNavRef={hideNavRef}
