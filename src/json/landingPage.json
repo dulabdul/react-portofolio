@@ -171,6 +171,13 @@
         "platform" : "Buildwithangga Indonesia",
         "imageUrl" : "/images/certificate/mern-bwa.jpg",
         "credentialUrl" : null 
+    },
+        {
+        "id" : "cert-11",
+        "title" : "Belajar Fundamental Aplikasi Web dengan Reac",
+        "platform" : "dicoding indonesia",
+        "imageUrl" : "/images/certificate/fundamental-react.jpg",
+        "credentialUrl" : "https://www.dicoding.com/certificates/QLZ9KL3E2Z5D" 
     }
 ]
 }
