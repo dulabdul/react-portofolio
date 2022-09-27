@@ -3,6 +3,7 @@ import HeroImg from '../assets/images/icons/coding1.png';
 import { gsap } from 'gsap';
 import { TextPlugin } from 'gsap/TextPlugin';
 import Button from '../elements/Button';
+import Fade from 'react-reveal/Fade';
 import {
   FaPhone,
   FaFileDownload,
@@ -69,9 +70,11 @@ export default function Hero({ contacsRef }) {
             ></h2>
             <p className='title-info text-capitalize' ref={titleInfo}></p>
           </div>
-          <div className='col-md-6 mt-4'>
-            <img src={HeroImg} alt='Hero' className='profile-img img-fluid' />
-          </div>
+          <Fade right big delay={400}>
+            <div className='col-md-6 mt-4'>
+              <img src={HeroImg} alt='Hero' className='profile-img img-fluid' />
+            </div>
+          </Fade>
         </div>
       </div>
       <div className='support'>

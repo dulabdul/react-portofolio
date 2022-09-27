@@ -11,6 +11,7 @@ import nodejsIcons from '../assets/images/icons/nodejs.png';
 import pwaIcons from '../assets/images/icons/pwa1.png';
 import wordpressIcons from '../assets/images/icons/wordpress.png';
 import reactIcons from '../assets/images/icons/react.svg';
+import mongoIcons from '../assets/images/icons/mongodb.svg';
 export default function Skills() {
   return (
     <section id='skills' className='container-skills'>
@@ -22,7 +23,7 @@ export default function Skills() {
       <div className='container'>
         <div className='card bg-skills'>
           <div className='card-body '>
-            <div className='row justify-content-center align-items-center img-icons'>
+            <div className='row align-items-center img-icons'>
               <div className='col-6 col-sm-4 col-lg-3 col-xl-2'>
                 <img
                   src={htmlIcons}
@@ -102,6 +103,13 @@ export default function Skills() {
               </div>
               <div className='col-6 col-sm-4 col-lg-3 col-xl-2'>
                 <img src={reactIcons} className='img-fluid' alt='React Icons' />
+              </div>
+              <div className='col-6 col-sm-4 col-lg-3 col-xl-2'>
+                <img
+                  src={mongoIcons}
+                  className='img-fluid'
+                  alt='MongoDB Icons'
+                />
               </div>
             </div>
           </div>
