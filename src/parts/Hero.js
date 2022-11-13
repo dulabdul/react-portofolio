@@ -51,28 +51,38 @@ export default function Hero({ contacsRef }) {
     });
   });
   return (
-    <div className='container home' id='home'>
+    <div
+      className='container home'
+      id='home'>
       <div className='jumbotron bg-transparent'>
         <div className='row justify-content-evenly'>
           <div className='col-md-6 text-start'>
             <h1
               className='hallo text-white font-weight-bold'
-              ref={haloRef}
-            ></h1>
+              ref={haloRef}></h1>
             <span
               className='first-name font-weight-bold'
-              ref={firstName}
-            ></span>
-            <p className='last-name font-weight-bold' ref={lastName}></p>
+              ref={firstName}></span>
+            <p
+              className='last-name font-weight-bold'
+              ref={lastName}></p>
             <h2
               className='title-job text-white font-weight-normal mt-2'
-              ref={titleJob}
-            ></h2>
-            <p className='title-info text-capitalize' ref={titleInfo}></p>
+              ref={titleJob}></h2>
+            <p
+              className='title-info text-capitalize'
+              ref={titleInfo}></p>
           </div>
-          <Fade right big delay={450}>
+          <Fade
+            right
+            big
+            delay={450}>
             <div className='col-md-6 mt-4'>
-              <img src={HeroImg} alt='Hero' className='profile-img img-fluid' />
+              <img
+                src={HeroImg}
+                alt='Hero'
+                className='profile-img img-fluid'
+              />
             </div>
           </Fade>
         </div>
@@ -86,8 +96,7 @@ export default function Hero({ contacsRef }) {
               handlerScroll(contacsRef.current);
             }}
             isTransparent
-            hasShadow
-          >
+            hasShadow>
             <FaPhone style={{ fontSize: 24 }} /> Contact Me
           </Button>
           <Button
@@ -96,8 +105,7 @@ export default function Hero({ contacsRef }) {
             isExternal
             isPrimary
             target='_blank'
-            href='https://drive.google.com/file/d/1I7VNLgzXghTGO28GRo-8CJMOT3Hqb4DB/view?usp=sharing'
-          >
+            href='https://drive.google.com/file/d/1g3n34nys_g7bdhCvznnvJqaDTa1s8lZ1/view?usp=share_link'>
             <FaFileDownload style={{ fontSize: 24 }} /> Get My CV
           </Button>
         </div>
@@ -108,32 +116,28 @@ export default function Hero({ contacsRef }) {
               type='link'
               isExternal
               target='_blank'
-              href='https://www.instagram.com/ar.dev21__/'
-            >
+              href='https://www.instagram.com/ar.dev21__/'>
               <FaInstagram />
             </Button>
             <Button
               type='link'
               isExternal
               target='_blank'
-              href='https://www.linkedin.com/in/abdul-rahman-2737131a1/'
-            >
+              href='https://www.linkedin.com/in/abdul-rahman-2737131a1/'>
               <FaLinkedin />
             </Button>
             <Button
               type='link'
               isExternal
               target='_blank'
-              href='https://github.com/dulabdul'
-            >
+              href='https://github.com/dulabdul'>
               <FaGithub />
             </Button>
             <Button
               type='link'
               isExternal
               target='_blank'
-              href='mailto:dulabdol1331@gmail.com'
-            >
+              href='mailto:dulabdol1331@gmail.com'>
               <FaEnvelope />
             </Button>
           </div>

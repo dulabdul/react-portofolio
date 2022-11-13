@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.505684e0.css",
+    "main.js": "/static/js/main.6e4ee7dc.js",
+    "static/media/coding1.png": "/static/media/coding1.ac94f7251414cd426019.png",
+    "static/media/webpack.png": "/static/media/webpack.47692505d122dbcae490.png",
+    "static/media/pwa1.png": "/static/media/pwa1.236d04918d08fb08b2a7.png",
+    "static/media/wordpress.png": "/static/media/wordpress.daabdc199d428ef839c5.png",
+    "static/media/nodejs.png": "/static/media/nodejs.478c590a266bed215577.png",
+    "static/media/mongodb.svg": "/static/media/mongodb.fd82554bd307566edfca0c32271a894e.svg",
+    "static/media/sass.svg": "/static/media/sass.a17505e3004c556710e1efb5c1042295.svg",
+    "static/media/react.svg": "/static/media/react.2d80508d388f8a99ffd2129955e481b2.svg",
+    "static/media/tailwindcss-icon.svg": "/static/media/tailwindcss-icon.017e1e304e12384d156d384f40a4b5f8.svg",
+    "static/media/git.svg": "/static/media/git.65b342377cec2f153a6ef7ba348ec053.svg",
+    "static/media/php.svg": "/static/media/php.a35a36d5c1caa86eba3f9df8cda38306.svg",
+    "index.html": "/index.html",
+    "static/media/bootstrap.svg": "/static/media/bootstrap.0ff115e6ead7c5f5755b1c78053fbe9e.svg",
+    "static/media/javascript.svg": "/static/media/javascript.bdcc041f5e6171a7e2d7fa3d65b34c12.svg",
+    "static/media/html.svg": "/static/media/html.62a3bfbcbc4e82d39c3f99f9b819fe41.svg",
+    "static/media/css3.svg": "/static/media/css3.41a9e921d166819f988ddcd6ab3a57e7.svg",
+    "main.505684e0.css.map": "/static/css/main.505684e0.css.map",
+    "main.6e4ee7dc.js.map": "/static/js/main.6e4ee7dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.505684e0.css",
+    "static/js/main.6e4ee7dc.js"
+  ]
+}

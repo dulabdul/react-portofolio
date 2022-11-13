@@ -6,7 +6,10 @@ export default function Project({ projectRef, data }) {
   return (
     <>
       {' '}
-      <section id='project' className='container-project pb-5' ref={projectRef}>
+      <section
+        id='project'
+        className='container-project pb-5'
+        ref={projectRef}>
         <div className='container'>
           <div className='row'>
             <div className='col-12 heading-konten mb-2'>
@@ -24,16 +27,16 @@ export default function Project({ projectRef, data }) {
               return (
                 <div
                   className='col-lg-4 mb-4 col-sm-12'
-                  key={`project-${index}`}
-                >
-                  <Fade bottom delay={500 * index}>
+                  key={`project-${index}`}>
+                  <Fade
+                    bottom
+                    delay={300 * index}>
                     <div className='content'>
                       <Button
                         type='link'
                         isExternal
                         target='_blank'
-                        href={`${project.urlDemo}`}
-                      >
+                        href={`${project.urlDemo}`}>
                         <div className='content-overlay'></div>
                         <img
                           className='content-image'
@@ -60,29 +63,29 @@ export default function Project({ projectRef, data }) {
                             isLight
                             isSmall
                             isExternal
-                            href={`${project.urlDemo}`}
-                          >
+                            href={`${project.urlDemo}`}>
                             <i
                               className='fas fa-external-link-alt'
-                              style={{ fontSize: '16px' }}
-                            ></i>{' '}
+                              style={{ fontSize: '16px' }}></i>{' '}
                             Demo
                           </Button>
-                          <Button
-                            className='btn ms-2'
-                            type='link'
-                            target='_blank'
-                            isLight
-                            isExternal
-                            isSmall
-                            href={`${project.urlGithub}`}
-                          >
-                            <i
-                              className='fab fa-github'
-                              style={{ fontSize: '16px' }}
-                            ></i>{' '}
-                            Github
-                          </Button>
+                          {project.urlGithub === null ? (
+                            ''
+                          ) : (
+                            <Button
+                              className='btn ms-2'
+                              type='link'
+                              target='_blank'
+                              isLight
+                              isExternal
+                              isSmall
+                              href={`${project.urlGithub}`}>
+                              <i
+                                className='fab fa-github'
+                                style={{ fontSize: '16px' }}></i>{' '}
+                              Github
+                            </Button>
+                          )}
                         </div>
                       </Button>
                       <span className='text-center title-content'>
@@ -102,8 +105,7 @@ export default function Project({ projectRef, data }) {
                 type='link'
                 isLarge
                 href='/detail'
-                target='_blank'
-              >
+                target='_blank'>
                 Show All
               </Button>
             </div>

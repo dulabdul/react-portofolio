@@ -10,7 +10,10 @@ import {
 } from 'react-icons/fa';
 export default function Contacs({ contacsRef }) {
   return (
-    <section ref={contacsRef} id='contact' className='container-contact'>
+    <section
+      ref={contacsRef}
+      id='contact'
+      className='container-contact'>
       <div className='container-md'>
         <div className='row'>
           <div className='col-12 heading-konten'>
@@ -22,8 +25,7 @@ export default function Contacs({ contacsRef }) {
           <div
             className='col-12 section_head_contact text-start mt-5'
             data-aos-once='true'
-            data-aos='fade-right'
-          >
+            data-aos='fade-right'>
             <p className='title-contact font-weight-light'>
               <span>Contact</span> Information
             </p>
@@ -33,15 +35,13 @@ export default function Contacs({ contacsRef }) {
           <div
             className='col-md d-flex mt-3'
             data-aos-once='true'
-            data-aos='fade-up-right'
-          >
+            data-aos='fade-up-right'>
             <div className='icon-contact'>
               <Button
                 type='link'
                 isExternal
                 href='https://wa.me/+6289675293838'
-                target='_blank'
-              >
+                target='_blank'>
                 <FaPhone />
               </Button>
             </div>
@@ -57,15 +57,13 @@ export default function Contacs({ contacsRef }) {
           <div
             className='col-md d-flex mt-3'
             data-aos-once='true'
-            data-aos='fade-up'
-          >
+            data-aos='fade-up'>
             <div className='icon-contact'>
               <Button
                 href='mailto:dulabdol1331@gmail.com'
                 type='link'
                 isExternal
-                target='_blank'
-              >
+                target='_blank'>
                 <FaEnvelope />
               </Button>
             </div>
@@ -81,8 +79,7 @@ export default function Contacs({ contacsRef }) {
           <div
             className='col-md d-flex mt-3'
             data-aos-once='true'
-            data-aos='fade-up-left'
-          >
+            data-aos='fade-up-left'>
             <div className='icon-contact'>
               <FaMapMarkerAlt />
             </div>
@@ -91,7 +88,7 @@ export default function Contacs({ contacsRef }) {
                 Address
               </p>
               <p className='font-weight-light text-white fs-6 text-start'>
-                Jakarta Utara,Indonesia
+                DKI Jakarta, Indonesia
               </p>
             </div>
           </div>
@@ -100,8 +97,7 @@ export default function Contacs({ contacsRef }) {
           <div
             className='col-12 section_head_sosmed text-start'
             data-aos-once='true'
-            data-aos='fade-right'
-          >
+            data-aos='fade-right'>
             <p className='title-contact font-weight-italic'>
               <span>Sosial Media</span>Information
             </p>
@@ -110,33 +106,36 @@ export default function Contacs({ contacsRef }) {
         <div className='pt-30'>
           <div className='col-12 social-media-container mb-5 text-center'>
             <ul className='social-media-link'>
-              <li data-aos-once='true' data-aos='fade-up-right'>
+              <li
+                data-aos-once='true'
+                data-aos='fade-up-right'>
                 <Button
                   href='https://www.instagram.com/ar.dev21__/'
                   type='link'
                   isExternal
-                  target='_blank'
-                >
+                  target='_blank'>
                   <FaInstagram />
                 </Button>
               </li>
-              <li data-aos-once='true' data-aos='fade-up'>
+              <li
+                data-aos-once='true'
+                data-aos='fade-up'>
                 <Button
                   href='https://www.linkedin.com/in/abdul-rahman-2737131a1/'
                   type='link'
                   isExternal
-                  target='_blank'
-                >
+                  target='_blank'>
                   <FaLinkedin />
                 </Button>
               </li>
-              <li data-aos-once='true' data-aos='fade-up-left'>
+              <li
+                data-aos-once='true'
+                data-aos='fade-up-left'>
                 <Button
                   href='https://github.com/dulabdul'
                   target='_blank'
                   type='link'
-                  isExternal
-                >
+                  isExternal>
                   <FaGithub />
                 </Button>
               </li>

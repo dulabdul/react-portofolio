@@ -12,9 +12,12 @@ import pwaIcons from '../assets/images/icons/pwa1.png';
 import wordpressIcons from '../assets/images/icons/wordpress.png';
 import reactIcons from '../assets/images/icons/react.svg';
 import mongoIcons from '../assets/images/icons/mongodb.svg';
+import tailwindIcon from '../assets/images/icons/tailwindcss-icon.svg';
 export default function Skills() {
   return (
-    <section id='skills' className='container-skills'>
+    <section
+      id='skills'
+      className='container-skills'>
       <div className='heading-konten mt-3'>
         <h2 className='text-white text-center'>What Skill & Tools</h2>
         <h2 className='text-white text-center'>I Have for You</h2>
@@ -23,7 +26,7 @@ export default function Skills() {
       <div className='container'>
         <div className='card bg-skills'>
           <div className='card-body '>
-            <div className='row align-items-center img-icons'>
+            <div className='row align-items-center justify-content-center img-icons'>
               <div className='col-6 col-sm-4 col-lg-3 col-xl-2'>
                 <img
                   src={htmlIcons}
@@ -102,11 +105,22 @@ export default function Skills() {
                 />
               </div>
               <div className='col-6 col-sm-4 col-lg-3 col-xl-2'>
-                <img src={reactIcons} className='img-fluid' alt='React Icons' />
+                <img
+                  src={reactIcons}
+                  className='img-fluid'
+                  alt='React Icons'
+                />
               </div>
               <div className='col-6 col-sm-4 col-lg-3 col-xl-2'>
                 <img
                   src={mongoIcons}
+                  className='img-fluid'
+                  alt='MongoDB Icons'
+                />
+              </div>
+              <div className='col-6 col-sm-4 col-lg-3 col-xl-2'>
+                <img
+                  src={tailwindIcon}
                   className='img-fluid'
                   alt='MongoDB Icons'
                 />

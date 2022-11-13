@@ -88,7 +88,7 @@
         "description" : "<p>Project website artikel berita yang dibuat dengan Wordpress</p>",
         "stack" : "wordpress.",
         "urlDemo" : "https://publiknasional.com/",
-        "urlGithub" : "#",
+        "urlGithub" : null,
         "imageUrl": "/images/project/project-7.png"
     },
     {
@@ -153,7 +153,7 @@
     },
         {
         "id" : "cert-8",
-        "title" : "Become a Front-End Web Developer Exper",
+        "title" : "Become a Front-End Web Developer Expert",
         "platform" : "dicoding indonesia",
         "imageUrl" : "/images/certificate/mfwde.jpg",
         "credentialUrl" : "https://www.dicoding.com/certificates/MEPJLEER6Z3V" 
@@ -174,7 +174,7 @@
     },
         {
         "id" : "cert-11",
-        "title" : "Belajar Fundamental Aplikasi Web dengan Reac",
+        "title" : "Belajar Fundamental Aplikasi Web dengan React",
         "platform" : "dicoding indonesia",
         "imageUrl" : "/images/certificate/fundamental-react.jpg",
         "credentialUrl" : "https://www.dicoding.com/certificates/QLZ9KL3E2Z5D" 
