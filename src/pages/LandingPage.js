@@ -11,7 +11,6 @@ import ScrollToTop from '../parts/ScrollToTop';
 export default function LandingPage() {
   useEffect(() => {
     document.title = 'Portofolio | Home';
-    window.scrollTo(0, 0);
   });
   const projectRef = useRef(null);
   const certRef = useRef(null);
@@ -19,7 +18,6 @@ export default function LandingPage() {
   const contacsRef = useRef(null);
   return (
     <>
-      <ScrollToTop />
       <header>
         <Header
           hideNavRef={hideNavRef}
@@ -31,7 +29,10 @@ export default function LandingPage() {
       </header>
       <main>
         <Skills />
-        <Project projectRef={projectRef} data={landingPage.project} />
+        <Project
+          projectRef={projectRef}
+          data={landingPage.project}
+        />
         <Cert
           hideNavRef={hideNavRef}
           certRef={certRef}
@@ -40,6 +41,7 @@ export default function LandingPage() {
         <Contacs contacsRef={contacsRef} />
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }

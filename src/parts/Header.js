@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Button from '../elements/Button';
 import BrandText from './BrandText';
 import { useLocation } from 'react-router-dom';
+import ToggleTheme from './ToggleTheme';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 export default function Header({
   projectRef,
@@ -33,11 +34,8 @@ export default function Header({
   if (isCentered) {
     return (
       <Navbar
-        className='topnav fixed-top'
-        expand='lg'
-        bg='dark'
-        variant='light'
-      >
+        className={`topnav fixed-top ${navScroll}`}
+        expand='lg'>
         <Container>
           <Navbar.Brand>
             <BrandText />
@@ -47,10 +45,12 @@ export default function Header({
               <Button
                 type='link'
                 className={`nav-link ${getNavLinkClass('/')}`}
-                href='/'
-              >
+                href='/'>
                 Home
               </Button>
+            </li>
+            <li className='theme-icons nav-item'>
+              <ToggleTheme />
             </li>
           </Nav>
         </Container>
@@ -62,11 +62,8 @@ export default function Header({
       className={`topnav fixed-top ${navScroll}`}
       collapseOnSelect
       expand='lg'
-      bg='transparent'
-      variant='transparent'
       id='nav-area'
-      ref={hideNavRef}
-    >
+      ref={hideNavRef}>
       <Container>
         <Navbar.Brand>
           <BrandText />
@@ -78,20 +75,20 @@ export default function Header({
               <Button
                 type='link'
                 className={`nav-link ${getNavLinkClass('/')}`}
-                href='/'
-              >
+                href='/'>
                 Home
               </Button>
             </li>
             <li className='nav-item'>
               {' '}
               <Button
-                className={`nav-link ${getNavLinkClass('/project')}`}
+                className={`nav-link ${getNavLinkClass(
+                  '/project'
+                )} fw-semibold`}
                 onClick={() => {
                   handlerScroll(projectRef.current);
                 }}
-                type='button'
-              >
+                type='button'>
                 Project
               </Button>
             </li>
@@ -102,8 +99,9 @@ export default function Header({
                 onClick={() => {
                   handlerScroll(certRef.current);
                 }}
-                className={`nav-link ${getNavLinkClass('/certificate')}`}
-              >
+                className={`nav-link ${getNavLinkClass(
+                  '/certificate'
+                )} fw-semibold`}>
                 Certificate
               </Button>
             </li>
@@ -114,10 +112,14 @@ export default function Header({
                 onClick={() => {
                   handlerScroll(contacsRef.current);
                 }}
-                className={`nav-link ${getNavLinkClass('/contact')}`}
-              >
+                className={`nav-link ${getNavLinkClass(
+                  '/contact'
+                )} fw-semibold`}>
                 Contact
               </Button>
+            </li>
+            <li className='theme-icons nav-item'>
+              <ToggleTheme />
             </li>
           </Nav>
         </Navbar.Collapse>

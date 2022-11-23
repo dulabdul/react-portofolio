@@ -19,13 +19,13 @@ export default function Skills() {
       id='skills'
       className='container-skills'>
       <div className='heading-konten mt-3'>
-        <h2 className='text-white text-center'>What Skill & Tools</h2>
-        <h2 className='text-white text-center'>I Have for You</h2>
+        <h2 className='text-center'>What Skill & Tools</h2>
+        <h2 className='text-center'>I Have for You</h2>
         <hr />
       </div>
       <div className='container'>
         <div className='card bg-skills'>
-          <div className='card-body '>
+          <div className='card-body shadow'>
             <div className='row align-items-center justify-content-center img-icons'>
               <div className='col-6 col-sm-4 col-lg-3 col-xl-2'>
                 <img

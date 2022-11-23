@@ -13,10 +13,10 @@ export default function DetailProject({ projectRef, data }) {
         <div className='container'>
           <div className='row'>
             <div className='col-12 heading-konten mt-5 mb-2'>
-              <h2 className='text-center mt-2 font-weight-bold text-white heading__tagline'>
+              <h2 className='text-center mt-2 font-weight-bold heading__tagline'>
                 Check Out
               </h2>
-              <h2 className='text-center mb-3 font-weight-bold text-white heading__tagline'>
+              <h2 className='text-center mb-3 font-weight-bold heading__tagline'>
                 My Recent Project
               </h2>
               <hr />

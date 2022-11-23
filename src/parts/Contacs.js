@@ -17,7 +17,7 @@ export default function Contacs({ contacsRef }) {
       <div className='container-md'>
         <div className='row'>
           <div className='col-12 heading-konten'>
-            <h2 className='text-center fs-1 font-weight-bold heading__tagline text-white mt-2'>
+            <h2 className='text-center fs-1 font-weight-bold heading__tagline mt-2'>
               Get In Touch
             </h2>
             <hr />
@@ -49,9 +49,7 @@ export default function Contacs({ contacsRef }) {
               <p className='font-weight-normal fs-4 text-start title-contact'>
                 Telephone
               </p>
-              <p className='font-weight-light text-white text-start'>
-                +6289675293838
-              </p>
+              <p className='font-weight-light text-start'>+6289675293838</p>
             </div>
           </div>
           <div
@@ -71,7 +69,7 @@ export default function Contacs({ contacsRef }) {
               <p className='font-weight-normal fs-4 text-start title-contact'>
                 Email
               </p>
-              <p className='font-weight-light text-white text-start'>
+              <p className='font-weight-light text-start'>
                 dulabdol331@gmail.com
               </p>
             </div>
@@ -87,7 +85,7 @@ export default function Contacs({ contacsRef }) {
               <p className='font-weight-normal fs-4 text-start title-contact'>
                 Address
               </p>
-              <p className='font-weight-light text-white fs-6 text-start'>
+              <p className='font-weight-light fs-6 text-start'>
                 DKI Jakarta, Indonesia
               </p>
             </div>
@@ -104,13 +102,13 @@ export default function Contacs({ contacsRef }) {
           </div>
         </div>
         <div className='pt-30'>
-          <div className='col-12 social-media-container mb-5 text-center'>
+          <div className='col-12 social-media-container mb-5 text-center shadow'>
             <ul className='social-media-link'>
               <li
                 data-aos-once='true'
                 data-aos='fade-up-right'>
                 <Button
-                  href='https://www.instagram.com/ar.dev21__/'
+                  href='https://www.instagram.com/dul.abdul21/'
                   type='link'
                   isExternal
                   target='_blank'>

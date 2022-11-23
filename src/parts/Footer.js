@@ -3,7 +3,7 @@ import { FaHeart } from 'react-icons/fa';
 export default function Footer() {
   return (
     <footer className='footer p-3'>
-      <p className='text-center text-white'>
+      <p className='text-center'>
         &copy;2022.Develop by abdulrahman <FaHeart />
       </p>
     </footer>

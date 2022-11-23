@@ -22,7 +22,11 @@ export default function Hero({ contacsRef }) {
   };
   const haloRef = useRef();
   useEffect(() => {
-    gsap.to(haloRef.current, { duration: 1.2, delay: 1, text: 'Hi,Iam' });
+    gsap.to(haloRef.current, { duration: 1.2, delay: 1, text: 'Hi,I am' });
+  });
+  const iam = useRef();
+  useEffect(() => {
+    gsap.to(iam.current, { duration: 1.2, delay: 1, text: 'I am ' });
   });
 
   const firstName = useRef();
@@ -58,17 +62,18 @@ export default function Hero({ contacsRef }) {
         <div className='row justify-content-evenly'>
           <div className='col-md-6 text-start'>
             <h1
-              className='hallo text-white font-weight-bold'
+              className='hallo fw-bold fs-1'
               ref={haloRef}></h1>
-            <span
-              className='first-name font-weight-bold'
-              ref={firstName}></span>
-            <p
-              className='last-name font-weight-bold'
-              ref={lastName}></p>
+
             <h2
-              className='title-job text-white font-weight-normal mt-2'
-              ref={titleJob}></h2>
+              className='first-name fw-bold d-inline'
+              ref={firstName}></h2>
+            <h2
+              className='last-name fw-bold d-inline'
+              ref={lastName}></h2>
+            <h3
+              className='title-job fw-semibold fs-3'
+              ref={titleJob}></h3>
             <p
               className='title-info text-capitalize'
               ref={titleInfo}></p>
@@ -97,7 +102,8 @@ export default function Hero({ contacsRef }) {
             }}
             isTransparent
             hasShadow>
-            <FaPhone style={{ fontSize: 24 }} /> Contact Me
+            <FaPhone style={{ fontSize: 24 }} />{' '}
+            <span className='fw-semibold fs-6'>Contact Me</span>
           </Button>
           <Button
             className='btn ms-2'
@@ -116,7 +122,7 @@ export default function Hero({ contacsRef }) {
               type='link'
               isExternal
               target='_blank'
-              href='https://www.instagram.com/ar.dev21__/'>
+              href='https://www.instagram.com/dul.abdul21/'>
               <FaInstagram />
             </Button>
             <Button

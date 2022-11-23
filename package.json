@@ -15,7 +15,6 @@
     "gsap": "^3.11.1",
     "html-react-parser": "^3.0.4",
     "jquery": "^3.6.1",
-    "node-sass": "^7.0.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
@@ -28,6 +27,7 @@
     "react-ui-scrollspy": "^2.1.0",
     "redux": "^4.2.0",
     "redux-thunk": "^2.4.1",
+    "sass": "^1.56.1",
     "serve": "^14.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -37,7 +37,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "purgecss": "node ./src/scripts/purgecss.js",
+    "postbuild": "npm run purgecss"
   },
   "eslintConfig": {
     "extends": [
@@ -56,5 +58,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "child_process": "^1.0.2",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "purgecss": "^5.0.0"
   }
 }

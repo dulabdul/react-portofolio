@@ -21,10 +21,9 @@ export default function ScrollToTop() {
   return (
     <Button
       onClick={scrollToTop}
-      className='btn-scrollTop'
+      className='btn-scrollTop text-white'
       type='button'
-      style={{ display: visible ? 'inline' : 'none' }}
-    >
+      style={{ display: visible ? 'inline' : 'none' }}>
       <FaArrowUp />
     </Button>
   );
