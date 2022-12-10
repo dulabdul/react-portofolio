@@ -42,7 +42,7 @@
         "title" : "TripVacation Admin",
         "description" : "<p>Admin Dashboard dari website pemesanan hotel <a target='_blank' href='http://tripvacation.herokuapp.com/'>Portal web pemesanan hotel</a></p>",
         "stack" : "Html, Css, Javascript, MongoDb, ExpressJs, ReactJS, NodeJs, EJS.",
-        "urlDemo" : "http://tripvacation-admin.herokuapp.com/admin/login",
+        "urlDemo" : "https://tripvacation-server.vercel.app/",
         "urlGithub" : "https://github.com/dulabdul/MERN-TripVacation/tree/server-tripvacation",
         "imageUrl": "/images/project/project-10.png"
     },
@@ -51,7 +51,7 @@
         "title" : "Notes App",
         "description" : "<p>Project simple dengan React JS. Memiliki fitur CRUD Javascript, search notes, archived notes, dan fitur login.",
         "stack" : "Html, Css, Javascript, MongoDb, ExpressJs, ReactJS, NodeJs, EJS.",
-        "urlDemo" : "https://react-notes-apps.herokuapp.com/",
+        "urlDemo" : "https://notes-app-react-liart.vercel.app/",
         "urlGithub" : "https://github.com/dulabdul/notes-app-react",
         "imageUrl": "/images/project/project-12.png"
     },
