@@ -1,106 +1,112 @@
 {
-    "project" : [
+   "categories" : [
         {
-        "id" : "project-1",
-        "title" : "Live Report Covid-19",
-        "description" : "<p>Website yang menampilkan data kasus Covid-19 secara realtime, data didapat dari API covid-19 open source.</p>",
-        "stack" : "html, css, javascript, bootstrap, webpack, nodeJS, PWA.",
-        "urlDemo" : "https://infocorona-e90fb.web.app/",
-        "urlGithub" : "https://github.com/dulabdul/Web_Corona_Info.git",
-        "imageUrl": "/images/project/project-1.png"
-    },
-    {
-        "id" : "project-2",
-        "title" : "The Resto",
-        "description" : "<p>Final Project 'Menjadi Front-End Developer Expert' di <a target='_blank' href='https://www.dicoding.com'>Dicoding Indonesia </a>. Menampilkan list restaurant, fitur liked restaurant, fitur search.</p>",
-        "stack" : "html, css, javascript, webpack, nodeJS, PWA, Web Component, Codecept, karma",
-        "urlDemo" : "https://theresto-fc91d.web.app/",
-        "urlGithub" : "https://github.com/dulabdul/The-Resto.git",
-        "imageUrl": "/images/project/project-3.png"
-    },
-    {
-        "id" : "project-3",
-        "title" : "Nonton Kuy",
-        "description" : "<p>Project yang menampilkan daftar film secara realtime, data diambil dengan API <a target='_blank' href='https://www.themoviedb.org/'>themoviedb</a></p>",
-        "stack" : "html, css, javascript, materialize, webpack, nodeJS, PWA, push notification",
-        "urlDemo" : "https://nonton-kuy.web.app/",
-        "urlGithub" : "https://github.com/dulabdul/movie-katalog.git",
-        "imageUrl": "/images/project/project-8.png"
-    },
-    
-    {
-        "id" : "project-4",
-        "title" : "TripVacation",
-        "description" : "<p>Project pemesanan hotel dibangun dengan MERN(MongoDb,ExpressJS,ReactJs, dan NodeJS). Menggunakan API yang dibuat sendiri. <a target='_blank' href='http://tripvacation-admin.herokuapp.com/admin/login'>Admin Dashboard</a></p>",
-        "stack" : "Html, Css, Javascript, MongoDb, ExpressJs, ReactJS, NodeJs.",
-        "urlDemo" : "http://tripvacation.herokuapp.com/",
-        "urlGithub" : "https://github.com/dulabdul/MERN-TripVacation",
-        "imageUrl": "/images/project/project-11.png"
-    },
-    {
-        "id" : "project-5",
-        "title" : "TripVacation Admin",
-        "description" : "<p>Admin Dashboard dari website pemesanan hotel <a target='_blank' href='http://tripvacation.herokuapp.com/'>Portal web pemesanan hotel</a></p>",
-        "stack" : "Html, Css, Javascript, MongoDb, ExpressJs, ReactJS, NodeJs, EJS.",
-        "urlDemo" : "https://tripvacation-server.vercel.app/",
-        "urlGithub" : "https://github.com/dulabdul/MERN-TripVacation/tree/server-tripvacation",
-        "imageUrl": "/images/project/project-10.png"
-    },
-    {
-        "id" : "project-6",
-        "title" : "Notes App",
-        "description" : "<p>Project simple dengan React JS. Memiliki fitur CRUD Javascript, search notes, archived notes, dan fitur login.",
-        "stack" : "Html, Css, Javascript, MongoDb, ExpressJs, ReactJS, NodeJs, EJS.",
-        "urlDemo" : "https://notes-app-react-liart.vercel.app/",
-        "urlGithub" : "https://github.com/dulabdul/notes-app-react",
-        "imageUrl": "/images/project/project-12.png"
-    },
-    {
-        "id" : "project-7",
-        "title" : "CreavTech Web",
-        "description" : "<p>Final Project 'Belajar Dasar Pemrograman Web' di <a target='_blank' href='https://www.dicoding.com'>Dicoding Indonesia </a>. Website company profile statis dengan liblary animasi dari javascript</p>",
-        "stack" : "html, css, javascript",
-        "urlDemo" : "https://creavtech.web.app/",
-        "urlGithub" : "https://github.com/dulabdul/Submission_pemprogaman_dasar_web.git",
-        "imageUrl": "/images/project/project-4.png"
-    },
-    {
-        "id" : "project-8",
-        "title" : "Bookself Apps",
-        "description" : "<p>Final Project 'Belajar Membuat Front-End Web untuk Pemula' di <a target='_blank' href='https://www.dicoding.com'>Dicoding Indonesia </a>. di Dicoding Indonesia Website Bookself Apps yang memiliki fungsi CRUD Javascript</p>",
-        "stack" : "html, css, javascript, SweetAlert",
-        "urlDemo" : "https://bookself-apps.web.app/",
-        "urlGithub" : "https://github.com/dulabdul/Bookself-Apps-Dicoding.git",
-        "imageUrl": "/images/project/project-5.png"
-    },
-    {
-        "id" : "project-9",
-        "title" : "SoccerBall",
-        "description" : "<p>Project yang menampilkan klasemen pertandingan bola liga spanyol dan jadwal tanding. Memiliki fitur untuk menyimpan team favorit dan pertandingan favorit dan push notificaton</p>",
-        "stack" : "html, css, javascript, materialize, webpack, nodeJS, PWA, push notification",
-        "urlDemo" : "https://mysoccer-584dc.web.app/",
-        "urlGithub" : "https://github.com/dulabdul/PWA-Dicoding-MySoccer.git",
-        "imageUrl": "/images/project/project-6.png"
-    },
-    {
-        "id" : "project-10",
-        "title" : "Publik Nasional",
-        "description" : "<p>Project website artikel berita yang dibuat dengan Wordpress</p>",
-        "stack" : "wordpress.",
-        "urlDemo" : "https://publiknasional.com/",
-        "urlGithub" : null,
-        "imageUrl": "/images/project/project-7.png"
-    },
-    {
-        "id" : "project-11",
-        "title" : "Sistem Informasi Perpustakaan",
-        "description" : "<p>Project sistem informasi perpustakaan dibangun dengan native PHP</p>",
-        "stack" : "html, css, javascript, php, mySQL",
-        "urlDemo" : "https://abdul-sipus.000webhostapp.com/",
-        "urlGithub" : "https://github.com/dulabdul/Sistem-informasi-Perpustakaan",
-        "imageUrl": "/images/project/project-9.png"
-    }
-],
+            "title ": "react",
+            "projects" : [
+                {
+                    "id" : "project-1",
+                    "title" : "Live Report Covid-19",
+                    "description" : "<p>Website yang menampilkan data kasus Covid-19 secara realtime, data didapat dari API covid-19 open source.</p>",
+                    "stack" : "html, css, javascript, bootstrap, webpack, nodeJS, PWA.",
+                    "urlDemo" : "https://infocorona-e90fb.web.app/",
+                    "urlGithub" : "https://github.com/dulabdul/Web_Corona_Info.git",
+                    "imageUrl": "/images/project/project-1.png"
+                },
+                {
+                    "id" : "project-2",
+                    "title" : "The Resto",
+                    "description" : "<p>Final Project 'Menjadi Front-End Developer Expert' di <a target='_blank' href='https://www.dicoding.com'>Dicoding Indonesia </a>. Menampilkan list restaurant, fitur liked restaurant, fitur search.</p>",
+                    "stack" : "html, css, javascript, webpack, nodeJS, PWA, Web Component, Codecept, karma",
+                    "urlDemo" : "https://theresto-fc91d.web.app/",
+                    "urlGithub" : "https://github.com/dulabdul/The-Resto.git",
+                    "imageUrl": "/images/project/project-3.png"
+                },
+                {
+                    "id" : "project-3",
+                    "title" : "Nonton Kuy",
+                    "description" : "<p>Project yang menampilkan daftar film secara realtime, data diambil dengan API <a target='_blank' href='https://www.themoviedb.org/'>themoviedb</a></p>",
+                    "stack" : "html, css, javascript, materialize, webpack, nodeJS, PWA, push notification",
+                    "urlDemo" : "https://nonton-kuy.web.app/",
+                    "urlGithub" : "https://github.com/dulabdul/movie-katalog.git",
+                    "imageUrl": "/images/project/project-8.png"
+                },
+                
+                {
+                    "id" : "project-4",
+                    "title" : "TripVacation",
+                    "description" : "<p>Project pemesanan hotel dibangun dengan MERN(MongoDb,ExpressJS,ReactJs, dan NodeJS). Menggunakan API yang dibuat sendiri. <a target='_blank' href='http://tripvacation-admin.herokuapp.com/admin/login'>Admin Dashboard</a></p>",
+                    "stack" : "Html, Css, Javascript, MongoDb, ExpressJs, ReactJS, NodeJs.",
+                    "urlDemo" : "http://tripvacation.herokuapp.com/",
+                    "urlGithub" : "https://github.com/dulabdul/MERN-TripVacation",
+                    "imageUrl": "/images/project/project-11.png"
+                },
+                {
+                    "id" : "project-5",
+                    "title" : "TripVacation Admin",
+                    "description" : "<p>Admin Dashboard dari website pemesanan hotel <a target='_blank' href='http://tripvacation.herokuapp.com/'>Portal web pemesanan hotel</a></p>",
+                    "stack" : "Html, Css, Javascript, MongoDb, ExpressJs, ReactJS, NodeJs, EJS.",
+                    "urlDemo" : "https://tripvacation-server.vercel.app/",
+                    "urlGithub" : "https://github.com/dulabdul/MERN-TripVacation/tree/server-tripvacation",
+                    "imageUrl": "/images/project/project-10.png"
+                },
+                {
+                    "id" : "project-6",
+                    "title" : "Notes App",
+                    "description" : "<p>Project simple dengan React JS. Memiliki fitur CRUD Javascript, search notes, archived notes, dan fitur login.",
+                    "stack" : "Html, Css, Javascript, MongoDb, ExpressJs, ReactJS, NodeJs, EJS.",
+                    "urlDemo" : "https://notes-app-react-liart.vercel.app/",
+                    "urlGithub" : "https://github.com/dulabdul/notes-app-react",
+                    "imageUrl": "/images/project/project-12.png"
+                },
+                {
+                    "id" : "project-7",
+                    "title" : "CreavTech Web",
+                    "description" : "<p>Final Project 'Belajar Dasar Pemrograman Web' di <a target='_blank' href='https://www.dicoding.com'>Dicoding Indonesia </a>. Website company profile statis dengan liblary animasi dari javascript</p>",
+                    "stack" : "html, css, javascript",
+                    "urlDemo" : "https://creavtech.web.app/",
+                    "urlGithub" : "https://github.com/dulabdul/Submission_pemprogaman_dasar_web.git",
+                    "imageUrl": "/images/project/project-4.png"
+                },
+                {
+                    "id" : "project-8",
+                    "title" : "Bookself Apps",
+                    "description" : "<p>Final Project 'Belajar Membuat Front-End Web untuk Pemula' di <a target='_blank' href='https://www.dicoding.com'>Dicoding Indonesia </a>. di Dicoding Indonesia Website Bookself Apps yang memiliki fungsi CRUD Javascript</p>",
+                    "stack" : "html, css, javascript, SweetAlert",
+                    "urlDemo" : "https://bookself-apps.web.app/",
+                    "urlGithub" : "https://github.com/dulabdul/Bookself-Apps-Dicoding.git",
+                    "imageUrl": "/images/project/project-5.png"
+                },
+                {
+                    "id" : "project-9",
+                    "title" : "SoccerBall",
+                    "description" : "<p>Project yang menampilkan klasemen pertandingan bola liga spanyol dan jadwal tanding. Memiliki fitur untuk menyimpan team favorit dan pertandingan favorit dan push notificaton</p>",
+                    "stack" : "html, css, javascript, materialize, webpack, nodeJS, PWA, push notification",
+                    "urlDemo" : "https://mysoccer-584dc.web.app/",
+                    "urlGithub" : "https://github.com/dulabdul/PWA-Dicoding-MySoccer.git",
+                    "imageUrl": "/images/project/project-6.png"
+                },
+                {
+                    "id" : "project-10",
+                    "title" : "Publik Nasional",
+                    "description" : "<p>Project website artikel berita yang dibuat dengan Wordpress</p>",
+                    "stack" : "wordpress.",
+                    "urlDemo" : "https://publiknasional.com/",
+                    "urlGithub" : null,
+                    "imageUrl": "/images/project/project-7.png"
+                },
+                {
+                    "id" : "project-11",
+                    "title" : "Sistem Informasi Perpustakaan",
+                    "description" : "<p>Project sistem informasi perpustakaan dibangun dengan native PHP</p>",
+                    "stack" : "html, css, javascript, php, mySQL",
+                    "urlDemo" : "https://abdul-sipus.000webhostapp.com/",
+                    "urlGithub" : "https://github.com/dulabdul/Sistem-informasi-Perpustakaan",
+                    "imageUrl": "/images/project/project-9.png"
+                }
+        ]
+        }
+    ],
+
     "certificate" : [
         {
         "id" : "cert-1",

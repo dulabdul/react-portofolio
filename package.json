@@ -36,10 +36,7 @@
     "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build",
-    "purgecss": "node ./src/scripts/purgecss.js",
-    "postbuild": "npm run purgecss"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -60,9 +57,10 @@
     ]
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
     "child_process": "^1.0.2",
     "fs": "^0.0.1-security",
     "path": "^0.12.7",
-    "purgecss": "^5.0.0"
+    "postcss": "^8.4.20"
   }
 }

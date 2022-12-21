@@ -18,13 +18,13 @@ export default function Cert({ data, certRef, hideNavRef }) {
     const ref = hideNavRef.current;
     ref.style.display = 'none';
   };
-  useEffect(() => {
-    if (showModal === false) {
-      const ref = hideNavRef.current;
-      ref.style.display = 'block';
-      return;
-    }
-  }, [showModal, hideNavRef]);
+  // useEffect(() => {
+  //   if (showModal === false) {
+  //     const ref = hideNavRef.current;
+  //     ref.style.display = 'block';
+  //     return;
+  //   }
+  // }, [showModal, hideNavRef]);
 
   return (
     <section
