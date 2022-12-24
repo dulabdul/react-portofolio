@@ -1,7 +1,7 @@
 {
    "categories" : [
         {
-            "title ": "react",
+            "name": "front end",
             "projects" : [
                 {
                     "id" : "project-1",
@@ -39,15 +39,6 @@
                     "urlDemo" : "http://tripvacation.herokuapp.com/",
                     "urlGithub" : "https://github.com/dulabdul/MERN-TripVacation",
                     "imageUrl": "/images/project/project-11.png"
-                },
-                {
-                    "id" : "project-5",
-                    "title" : "TripVacation Admin",
-                    "description" : "<p>Admin Dashboard dari website pemesanan hotel <a target='_blank' href='http://tripvacation.herokuapp.com/'>Portal web pemesanan hotel</a></p>",
-                    "stack" : "Html, Css, Javascript, MongoDb, ExpressJs, ReactJS, NodeJs, EJS.",
-                    "urlDemo" : "https://tripvacation-server.vercel.app/",
-                    "urlGithub" : "https://github.com/dulabdul/MERN-TripVacation/tree/server-tripvacation",
-                    "imageUrl": "/images/project/project-10.png"
                 },
                 {
                     "id" : "project-6",
@@ -93,6 +84,21 @@
                     "urlDemo" : "https://publiknasional.com/",
                     "urlGithub" : null,
                     "imageUrl": "/images/project/project-7.png"
+                }
+       
+        ]
+        },
+        {
+            "name" : "backend",
+            "projects" : [
+                {
+                    "id" : "project-5",
+                    "title" : "TripVacation Admin",
+                    "description" : "<p>Admin Dashboard dari website pemesanan hotel <a target='_blank' href='http://tripvacation.herokuapp.com/'>Portal web pemesanan hotel</a></p>",
+                    "stack" : "Html, Css, Javascript, MongoDb, ExpressJs, ReactJS, NodeJs, EJS.",
+                    "urlDemo" : "https://tripvacation-server.vercel.app/",
+                    "urlGithub" : "https://github.com/dulabdul/MERN-TripVacation/tree/server-tripvacation",
+                    "imageUrl": "/images/project/project-10.png"
                 },
                 {
                     "id" : "project-11",
@@ -103,7 +109,41 @@
                     "urlGithub" : "https://github.com/dulabdul/Sistem-informasi-Perpustakaan",
                     "imageUrl": "/images/project/project-9.png"
                 }
-        ]
+            ]
+        },
+        {
+            "name" : "full stack",
+            "projects" : [
+                {
+                    "id" : "project-4",
+                    "title" : "TripVacation",
+                    "description" : "<p>Project pemesanan hotel dibangun dengan MERN(MongoDb,ExpressJS,ReactJs, dan NodeJS). Menggunakan API yang dibuat sendiri. <a target='_blank' href='http://tripvacation-admin.herokuapp.com/admin/login'>Admin Dashboard</a></p>",
+                    "stack" : "Html, Css, Javascript, MongoDb, ExpressJs, ReactJS, NodeJs.",
+                    "urlDemo" : "http://tripvacation.herokuapp.com/",
+                    "urlGithub" : "https://github.com/dulabdul/MERN-TripVacation",
+                    "imageUrl": "/images/project/project-11.png"
+                },
+                {
+                    "id" : "project-5",
+                    "title" : "TripVacation Admin",
+                    "description" : "<p>Admin Dashboard dari website pemesanan hotel <a target='_blank' href='http://tripvacation.herokuapp.com/'>Portal web pemesanan hotel</a></p>",
+                    "stack" : "Html, Css, Javascript, MongoDb, ExpressJs, ReactJS, NodeJs, EJS.",
+                    "urlDemo" : "https://tripvacation-server.vercel.app/",
+                    "urlGithub" : "https://github.com/dulabdul/MERN-TripVacation/tree/server-tripvacation",
+                    "imageUrl": "/images/project/project-10.png"
+                },
+                {
+                    "id" : "project-11",
+                    "title" : "Sistem Informasi Perpustakaan",
+                    "description" : "<p>Project sistem informasi perpustakaan dibangun dengan native PHP</p>",
+                    "stack" : "html, css, javascript, php, mySQL",
+                    "urlDemo" : "https://abdul-sipus.000webhostapp.com/",
+                    "urlGithub" : "https://github.com/dulabdul/Sistem-informasi-Perpustakaan",
+                    "imageUrl": "/images/project/project-9.png"
+                }
+            ]
+            
+         
         }
     ],
 

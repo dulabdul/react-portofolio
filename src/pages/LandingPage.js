@@ -31,7 +31,7 @@ export default function LandingPage() {
         <Skills />
         <Project
           projectRef={projectRef}
-          data={landingPage.project}
+          data={landingPage.categories}
         />
         <Cert
           hideNavRef={hideNavRef}

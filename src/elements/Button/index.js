@@ -10,6 +10,7 @@ export default function Button(props) {
   if (props.isSmall) className.push('btn-sm');
   if (props.isBlock) className.push('d-md-block');
   if (props.isTransparent) className.push('btn-outline-primary');
+  if (props.hasShadow) className.push('shadow-sm');
 
   const onClick = () => {
     if (props.onClick) props.onClick();
@@ -22,8 +23,7 @@ export default function Button(props) {
           className={className.join(' ')}
           style={props.style}
           target={props.target === '_blank' ? '_blank' : undefined}
-          rel='noopener noreferrer'
-        >
+          rel='noopener noreferrer'>
           {props.children}
         </a>
       );
@@ -33,8 +33,7 @@ export default function Button(props) {
           to={props.href}
           className={className.join(' ')}
           style={props.style}
-          onClick={onClick}
-        >
+          onClick={onClick}>
           {props.children}
         </Link>
       );
@@ -45,8 +44,7 @@ export default function Button(props) {
       className={className.join(' ')}
       style={props.style}
       onClick={onClick}
-      ref={props.ref}
-    >
+      ref={props.ref}>
       {props.children}
     </button>
   );
@@ -62,6 +60,7 @@ Button.propTypes = {
   isSmall: propTypes.bool,
   isLight: propTypes.bool,
   isLarge: propTypes.bool,
+  hasShadow: propTypes.bool,
   isBlock: propTypes.bool,
   isExternal: propTypes.bool,
   isTransparent: propTypes.bool,

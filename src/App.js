@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import LocaleContext from './contexts/LocaleContext';
 import LandingPage from './pages/LandingPage';
 import DetailPages from './pages/DetailPages';
+import NotFound from './pages/NotFoundPages';
 function App() {
   const [localeTheme, setTheme] = useState(
     localStorage.getItem('theme') || 'dark'
@@ -43,6 +44,11 @@ function App() {
               exacth
               path='/detail'
               element={<DetailPages />}
+            />
+            <Route
+              exacth
+              path='*'
+              element={<NotFound />}
             />
           </Routes>
         </div>
