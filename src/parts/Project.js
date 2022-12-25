@@ -20,9 +20,7 @@ export default function Project({ projectRef, data }) {
   function handleChangeCategory(e) {
     setSelectedCategory(e.target.value);
   }
-  console.log(filterList);
-  console.log(selectedCategory);
-  console.log(data);
+
   return (
     <>
       {' '}
@@ -50,9 +48,10 @@ export default function Project({ projectRef, data }) {
                   }`}>
                   All Works
                 </button>
-                {data?.map((item) => {
+                {data?.map((item, index) => {
                   return (
                     <button
+                      key={index}
                       onClick={handleChangeCategory}
                       value={item.name}
                       className={`btn select_categories col text-capitalize ${
@@ -70,7 +69,6 @@ export default function Project({ projectRef, data }) {
           <div className='row'>
             {selectedCategory === 'allWork'
               ? data?.slice(0, 2).map((item, index) => {
-                  console.log(item);
                   return item?.projects?.slice(0, 6).map((project) => {
                     return (
                       <div

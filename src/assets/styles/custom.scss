@@ -783,7 +783,9 @@ header {
   #contact {
     padding: 1rem;
   }
-
+  .container-project {
+    padding-top: 3rem !important;
+  }
   .card-project {
     width: 85%;
     margin: auto;
@@ -792,6 +794,10 @@ header {
   .card-title {
     font-weight: 600;
     font-size: 22px;
+  }
+  .details.ms-auto {
+    display: flex;
+    flex-direction: row;
   }
 }
 

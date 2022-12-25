@@ -1,19 +1,5 @@
 import React from 'react';
-import htmlIcons from '../assets/images/icons/html.svg';
-import css3Icons from '../assets/images/icons/css3.svg';
-import javascriptIcons from '../assets/images/icons/javascript.svg';
-import phpIcons from '../assets/images/icons/php.svg';
-import bootstrapIcons from '../assets/images/icons/bootstrap.svg';
-import gitIcons from '../assets/images/icons/git.svg';
-import sassIcons from '../assets/images/icons/sass.svg';
-import webpackIcons from '../assets/images/icons/webpack.png';
-import nodejsIcons from '../assets/images/icons/nodejs.png';
-import pwaIcons from '../assets/images/icons/pwa1.png';
-import wordpressIcons from '../assets/images/icons/wordpress.png';
-import reactIcons from '../assets/images/icons/react.svg';
-import mongoIcons from '../assets/images/icons/mongodb.svg';
-import tailwindIcon from '../assets/images/icons/tailwindcss-icon.svg';
-export default function Skills() {
+export default function Skills({ data }) {
   return (
     <section
       id='skills'
@@ -27,7 +13,20 @@ export default function Skills() {
         <div className='card bg-skills'>
           <div className='card-body shadow'>
             <div className='row align-items-center justify-content-center img-icons'>
-              <div className='col-6 col-sm-4 col-lg-3 col-xl-2'>
+              {data.map((item, index) => {
+                return (
+                  <div
+                    key={index}
+                    className='col-6 col-sm-4 col-lg-3 col-xl-2'>
+                    <img
+                      src={item.imageUrl}
+                      className={`img-fluid`}
+                      alt={item.name}
+                    />
+                  </div>
+                );
+              })}
+              {/* <div className='col-6 col-sm-4 col-lg-3 col-xl-2'>
                 <img
                   src={htmlIcons}
                   className='img-fluid img-svg-html'
@@ -124,7 +123,7 @@ export default function Skills() {
                   className='img-fluid'
                   alt='MongoDB Icons'
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

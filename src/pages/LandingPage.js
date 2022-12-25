@@ -24,11 +24,15 @@ export default function LandingPage() {
           certRef={certRef}
           projectRef={projectRef}
           contacsRef={contacsRef}
+          data={landingPage.hero}
         />
-        <Hero contacsRef={contacsRef} />
+        <Hero
+          contacsRef={contacsRef}
+          data={landingPage.hero}
+        />
       </header>
       <main>
-        <Skills />
+        <Skills data={landingPage.skills} />
         <Project
           projectRef={projectRef}
           data={landingPage.categories}
@@ -38,7 +42,10 @@ export default function LandingPage() {
           certRef={certRef}
           data={landingPage.certificate}
         />
-        <Contacs contacsRef={contacsRef} />
+        <Contacs
+          contacsRef={contacsRef}
+          data={landingPage.hero}
+        />
       </main>
       <Footer />
       <ScrollToTop />

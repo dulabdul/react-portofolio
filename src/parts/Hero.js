@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import HeroImg from '../assets/images/icons/coding1.png';
 import { gsap } from 'gsap';
 import { TextPlugin } from 'gsap/TextPlugin';
 import Button from '../elements/Button';
@@ -13,7 +12,10 @@ import {
   FaEnvelope,
 } from 'react-icons/fa';
 gsap.registerPlugin(TextPlugin);
-export default function Hero({ contacsRef }) {
+export default function Hero({ contacsRef, data }) {
+  const { firstName, lastName, titleJob, description, CV, imageUrl } = data;
+  const { instragam, linkedin, github, emailUrl } = data.contactsUrl;
+
   const handlerScroll = (ref) => {
     window.scrollTo({
       top: ref.offsetTop - 50,
@@ -29,29 +31,29 @@ export default function Hero({ contacsRef }) {
     gsap.to(iam.current, { duration: 1.2, delay: 1, text: 'I am ' });
   });
 
-  const firstName = useRef();
+  const gsapFirstName = useRef();
   useEffect(() => {
-    gsap.to(firstName.current, { duration: 1, delay: 2, text: 'Abdul' });
+    gsap.to(gsapFirstName.current, { duration: 1, delay: 2, text: firstName });
   });
 
-  const lastName = useRef();
+  const gsapLastName = useRef();
   useEffect(() => {
-    gsap.to(lastName.current, { duration: 1, delay: 3, text: 'Rahman' });
+    gsap.to(gsapLastName.current, { duration: 1, delay: 3, text: lastName });
   });
-  const titleJob = useRef();
+  const gsapTitleJob = useRef();
   useEffect(() => {
-    gsap.to(titleJob.current, {
+    gsap.to(gsapTitleJob.current, {
       duration: 1.2,
       delay: 4,
-      text: 'Front-End Web Developer',
+      text: titleJob,
     });
   });
-  const titleInfo = useRef();
+  const gsapTitleInfo = useRef();
   useEffect(() => {
-    gsap.to(titleInfo.current, {
+    gsap.to(gsapTitleInfo.current, {
       duration: 3.5,
       delay: 5,
-      text: 'Turning your idea into a cool produk with a good web developer. Iam here to help your to turning idea to amazing product',
+      text: description,
     });
   });
   return (
@@ -64,19 +66,18 @@ export default function Hero({ contacsRef }) {
             <h1
               className='hallo fw-bold fs-1'
               ref={haloRef}></h1>
-
             <h2
-              className='first-name fw-bold d-inline'
-              ref={firstName}></h2>
+              className='first-name fw-bold d-inline text-capitalize'
+              ref={gsapFirstName}></h2>{' '}
             <h2
-              className='last-name fw-bold d-inline'
-              ref={lastName}></h2>
+              className='last-name fw-bold d-inline text-capitalize'
+              ref={gsapLastName}></h2>
             <h3
-              className='title-job fw-semibold fs-3'
-              ref={titleJob}></h3>
+              className='title-job fw-semibold fs-3 text-capitalize'
+              ref={gsapTitleJob}></h3>
             <p
               className='title-info text-capitalize'
-              ref={titleInfo}></p>
+              ref={gsapTitleInfo}></p>
           </div>
           <Fade
             right
@@ -84,7 +85,7 @@ export default function Hero({ contacsRef }) {
             delay={450}>
             <div className='col-md-6 mt-4'>
               <img
-                src={HeroImg}
+                src={imageUrl}
                 alt='Hero'
                 className='profile-img img-fluid'
               />
@@ -111,7 +112,7 @@ export default function Hero({ contacsRef }) {
             isExternal
             isPrimary
             target='_blank'
-            href='https://drive.google.com/file/d/1g3n34nys_g7bdhCvznnvJqaDTa1s8lZ1/view?usp=share_link'>
+            href={CV}>
             <FaFileDownload style={{ fontSize: 24 }} /> Get My CV
           </Button>
         </div>
@@ -122,28 +123,28 @@ export default function Hero({ contacsRef }) {
               type='link'
               isExternal
               target='_blank'
-              href='https://www.instagram.com/dul.abdul21/'>
+              href={instragam}>
               <FaInstagram />
             </Button>
             <Button
               type='link'
               isExternal
               target='_blank'
-              href='https://www.linkedin.com/in/abdul-rahman-2737131a1/'>
+              href={linkedin}>
               <FaLinkedin />
             </Button>
             <Button
               type='link'
               isExternal
               target='_blank'
-              href='https://github.com/dulabdul'>
+              href={github}>
               <FaGithub />
             </Button>
             <Button
               type='link'
               isExternal
               target='_blank'
-              href='mailto:dulabdol1331@gmail.com'>
+              href={emailUrl}>
               <FaEnvelope />
             </Button>
           </div>

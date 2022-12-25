@@ -12,7 +12,9 @@ export default function Header({
   hideNavRef,
   contacsRef,
   isCentered,
+  data,
 }) {
+  const { firstName, lastName } = data;
   const [navScroll, setNavScrolled] = useState(null);
   const listenScrollEvent = () => {
     window.scrollY > 50 ? setNavScrolled('scrolled') : setNavScrolled('');
@@ -40,9 +42,12 @@ export default function Header({
         expand='lg'>
         <Container>
           <Navbar.Brand>
-            <BrandText />
+            <BrandText
+              firstName={firstName}
+              lastName={lastName}
+            />
           </Navbar.Brand>
-          <Nav className='ms-auto'>
+          <Nav className='details ms-auto align-items-center'>
             <li className='nav-item'>
               <Button
                 type='link'
@@ -69,11 +74,14 @@ export default function Header({
         ref={hideNavRef}>
         <Container>
           <Navbar.Brand>
-            <BrandText />
+            <BrandText
+              firstName={firstName}
+              lastName={lastName}
+            />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
           <Navbar.Collapse id='responsive-navbar-nav'>
-            <Nav className='ms-auto'>
+            <Nav className='ms-auto align-items-center'>
               <li className='nav-item'>
                 <Button
                   type='link'

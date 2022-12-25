@@ -10,7 +10,7 @@ export default function NotFound() {
           <img
             className='w-full h-full mx-auto notfound-img'
             src={notFound}
-            alt=''
+            alt='Notfound images'
           />
         </div>
         <div className='grid grid-cols-1 text-center'>

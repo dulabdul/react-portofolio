@@ -1,4 +1,86 @@
 {
+    "hero" : {
+        "firstName" : "abdul",
+        "lastName" : "rahman",
+        "titleJob" : "Front-end web developer",
+        "imageUrl" : "/images/icons/coding1.png",
+        "description" : "Turning Your Idea Into A Cool Produk With A Good Web Developer. Iam Here To Help Your To Turning Idea To Amazing Product",
+        "CV" : "https://drive.google.com/file/d/1DKd16eFz8orXQM-Gq_iZ1W93GC9iE-cB/view?usp=share_link",
+        "contactsUrl" : {
+           "instagram" : "https://www.instagram.com/dul.abdul21",
+           "linkedin" : "https://www.linkedin.com/in/abdul-rahman-2737131a1",
+           "github" : "https://github.com/dulabdul",
+           "emailUrl" : "mailto:dulabdol1331@gmail.com",
+           "whatsapp" : "https://wa.me/+6289675293838"
+        },
+        "contacs" : {
+            "phoneNumber" : "+6289675293838",
+            "location" : "DKI jakarta, indonesia",
+            "email" : "dulabdol1331@gmail.com"
+        }
+    },
+    "skills" : [
+        {
+            "name" : "html 5",
+            "imageUrl" : "/images/icons/html.svg"
+        },
+        {
+            "name" :"css 3",
+            "imageUrl" : "/images/icons/css3.svg"
+        },
+        {
+            "name" :"javascript",
+            "imageUrl" : "/images/icons/javascript.svg"
+        },
+        {
+            "name" :"git",
+            "imageUrl" : "/images/icons/git.svg"
+        },
+        {
+            "name" :"adobe-xd",
+            "imageUrl" : "/images/icons/adobe-xd.png"
+        },
+        {
+            "name" :"figma",
+            "imageUrl" : "/images/icons/figma.svg"
+        },
+        {
+            "name" :"tailwind",
+            "imageUrl" : "/images/icons/tailwindcss-icon.svg"
+        },
+        {
+            "name" :"sass",
+            "imageUrl" : "/images/icons/sass.svg"
+        },
+        {
+            "name" :"webpack",
+            "imageUrl" : "/images/icons/webpack.png"
+        },
+        {
+            "name" :"wordpress",
+            "imageUrl" : "/images/icons/wordpress.png"
+        },
+        {
+            "name" :"php",
+            "imageUrl" : "/images/icons/php.svg"
+        },
+        {
+            "name" :"react js",
+            "imageUrl" : "/images/icons/react.svg"
+        },
+        {
+            "name" :"node js",
+            "imageUrl" : "/images/icons/nodejs.png"
+        },
+        {
+            "name" :"mongodb",
+            "imageUrl" : "/images/icons/mongodb.svg"
+        },
+        {
+            "name" :"pwa",
+            "imageUrl" : "/images/icons/pwa1.png"
+        }
+    ],
    "categories" : [
         {
             "name": "front end",

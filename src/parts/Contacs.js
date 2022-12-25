@@ -8,7 +8,10 @@ import {
   FaGithub,
   FaLinkedin,
 } from 'react-icons/fa';
-export default function Contacs({ contacsRef }) {
+export default function Contacs({ contacsRef, data }) {
+  const { phoneNumber, location, email } = data.contacs;
+  const { instagram, linkedin, github } = data.contactsUrl;
+
   return (
     <section
       ref={contacsRef}
@@ -49,7 +52,7 @@ export default function Contacs({ contacsRef }) {
               <p className='font-weight-normal fs-4 text-start title-contact'>
                 Telephone
               </p>
-              <p className='font-weight-light text-start'>+6289675293838</p>
+              <p className='font-weight-light text-start'>{phoneNumber}</p>
             </div>
           </div>
           <div
@@ -69,9 +72,7 @@ export default function Contacs({ contacsRef }) {
               <p className='font-weight-normal fs-4 text-start title-contact'>
                 Email
               </p>
-              <p className='font-weight-light text-start'>
-                dulabdol331@gmail.com
-              </p>
+              <p className='font-weight-light text-start'>{email}</p>
             </div>
           </div>
           <div
@@ -85,8 +86,8 @@ export default function Contacs({ contacsRef }) {
               <p className='font-weight-normal fs-4 text-start title-contact'>
                 Address
               </p>
-              <p className='font-weight-light fs-6 text-start'>
-                DKI Jakarta, Indonesia
+              <p className='font-weight-light fs-6 text-start text-uppercase'>
+                {location}
               </p>
             </div>
           </div>
@@ -108,7 +109,7 @@ export default function Contacs({ contacsRef }) {
                 data-aos-once='true'
                 data-aos='fade-up-right'>
                 <Button
-                  href='https://www.instagram.com/dul.abdul21/'
+                  href={instagram}
                   type='link'
                   isExternal
                   target='_blank'>
@@ -119,7 +120,7 @@ export default function Contacs({ contacsRef }) {
                 data-aos-once='true'
                 data-aos='fade-up'>
                 <Button
-                  href='https://www.linkedin.com/in/abdul-rahman-2737131a1/'
+                  href={linkedin}
                   type='link'
                   isExternal
                   target='_blank'>
@@ -130,7 +131,7 @@ export default function Contacs({ contacsRef }) {
                 data-aos-once='true'
                 data-aos='fade-up-left'>
                 <Button
-                  href='https://github.com/dulabdul'
+                  href={github}
                   target='_blank'
                   type='link'
                   isExternal>

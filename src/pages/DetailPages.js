@@ -3,7 +3,7 @@ import DetailProject from '../parts/DetailProject';
 import Header from '../parts/Header';
 import landingPage from '../json/landingPage.json';
 import Footer from '../parts/Footer';
-
+import ScrollToTop from '../parts/ScrollToTop';
 export default function DetailPages() {
   useEffect(() => {
     document.title = 'Portofolio | Detail';
@@ -11,12 +11,16 @@ export default function DetailPages() {
   return (
     <>
       <header>
-        <Header isCentered />
+        <Header
+          isCentered
+          data={landingPage.hero}
+        />
       </header>
       <main>
-        <DetailProject data={landingPage.project} />
+        <DetailProject data={landingPage.categories} />
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }
