@@ -83,9 +83,9 @@ export default function DetailProject({ projectRef, data }) {
                               isExternal
                               target='_blank'
                               href={`${project.urlDemo}`}>
-                              <div className='content-overlay'></div>
+                              <div className='content-overlay overflow-hidden'></div>
                               <img
-                                className='content-image'
+                                className='content-image overflow-hidden'
                                 src={project.imageUrl}
                                 alt={project.title}
                               />
@@ -94,43 +94,46 @@ export default function DetailProject({ projectRef, data }) {
                                 <h3 className='content-title text-capitalize'>
                                   {project.title}
                                 </h3>
+
                                 <h4 className='h6 content-tag text-capitalize'>
                                   {project.stack}
                                 </h4>
                                 <hr />
                                 <hr className='ms-3' />
                                 <hr className='ms-3 hr-tiga' />
-
-                                <Button
-                                  className='btn'
-                                  type='link'
-                                  target='_blank'
-                                  isLight
-                                  isSmall
-                                  isExternal
-                                  href={`${project.urlDemo}`}>
-                                  <i
-                                    className='fas fa-external-link-alt'
-                                    style={{ fontSize: '16px' }}></i>{' '}
-                                  Demo
-                                </Button>
-                                {project.urlGithub === null ? (
-                                  ''
-                                ) : (
+                                {parse(project.description)}
+                                <div>
                                   <Button
-                                    className='btn ms-2'
+                                    className='btn'
                                     type='link'
                                     target='_blank'
                                     isLight
-                                    isExternal
                                     isSmall
-                                    href={`${project.urlGithub}`}>
+                                    isExternal
+                                    href={`${project.urlDemo}`}>
                                     <i
-                                      className='fab fa-github'
+                                      className='fas fa-external-link-alt'
                                       style={{ fontSize: '16px' }}></i>{' '}
-                                    Github
+                                    Demo
                                   </Button>
-                                )}
+                                  {project.urlGithub === null ? (
+                                    ''
+                                  ) : (
+                                    <Button
+                                      className='btn ms-2'
+                                      type='link'
+                                      target='_blank'
+                                      isLight
+                                      isExternal
+                                      isSmall
+                                      href={`${project.urlGithub}`}>
+                                      <i
+                                        className='fab fa-github'
+                                        style={{ fontSize: '16px' }}></i>{' '}
+                                      Github
+                                    </Button>
+                                  )}
+                                </div>
                               </div>
                             </Button>
                             <span className='text-center title-content'>
@@ -173,6 +176,7 @@ export default function DetailProject({ projectRef, data }) {
                                   <h3 className='content-title text-capitalize'>
                                     {project.title}
                                   </h3>
+
                                   <h4 className='h6 content-tag text-capitalize'>
                                     {project.stack}
                                   </h4>
@@ -180,37 +184,38 @@ export default function DetailProject({ projectRef, data }) {
                                   <hr className='ms-3' />
                                   <hr className='ms-3 hr-tiga' />
                                   {parse(project.description)}
-
-                                  <Button
-                                    className='btn'
-                                    type='link'
-                                    target='_blank'
-                                    isLight
-                                    isSmall
-                                    isExternal
-                                    href={`${project.urlDemo}`}>
-                                    <i
-                                      className='fas fa-external-link-alt'
-                                      style={{ fontSize: '16px' }}></i>{' '}
-                                    Demo
-                                  </Button>
-                                  {project.urlGithub === null ? (
-                                    ''
-                                  ) : (
+                                  <div>
                                     <Button
-                                      className='btn ms-2'
+                                      className='btn'
                                       type='link'
                                       target='_blank'
                                       isLight
-                                      isExternal
                                       isSmall
-                                      href={`${project.urlGithub}`}>
+                                      isExternal
+                                      href={`${project.urlDemo}`}>
                                       <i
-                                        className='fab fa-github'
+                                        className='fas fa-external-link-alt'
                                         style={{ fontSize: '16px' }}></i>{' '}
-                                      Github
+                                      Demo
                                     </Button>
-                                  )}
+                                    {project.urlGithub === null ? (
+                                      ''
+                                    ) : (
+                                      <Button
+                                        className='btn ms-2'
+                                        type='link'
+                                        target='_blank'
+                                        isLight
+                                        isExternal
+                                        isSmall
+                                        href={`${project.urlGithub}`}>
+                                        <i
+                                          className='fab fa-github'
+                                          style={{ fontSize: '16px' }}></i>{' '}
+                                        Github
+                                      </Button>
+                                    )}
+                                  </div>
                                 </div>
                               </Button>
                               <span className='text-center title-content'>
