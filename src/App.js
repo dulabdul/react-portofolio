@@ -13,24 +13,23 @@ import { getAnalytics } from 'firebase/analytics';
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: 'AIzaSyDUnSmcX7x6fnu5zUWBHxtBvHY_LEJhGTk',
-  authDomain: 'abdul-portofolio.firebaseapp.com',
-  projectId: 'abdul-portofolio',
-  storageBucket: 'abdul-portofolio.appspot.com',
-  messagingSenderId: '949854108171',
-  appId: '1:949854108171:web:e119f5733ce439ba0e650e',
-  measurementId: 'G-K62B8MWGVN',
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
 function App() {
   const [localeTheme, setTheme] = useState(
     localStorage.getItem('theme') || 'dark'
   );
+  const firebaseConfig = {
+    apiKey: 'AIzaSyDUnSmcX7x6fnu5zUWBHxtBvHY_LEJhGTk',
+    authDomain: 'abdul-portofolio.firebaseapp.com',
+    projectId: 'abdul-portofolio',
+    storageBucket: 'abdul-portofolio.appspot.com',
+    messagingSenderId: '949854108171',
+    appId: '1:949854108171:web:e119f5733ce439ba0e650e',
+    measurementId: 'G-K62B8MWGVN',
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
   const toggleThemeHandler = () => {
     setTheme((prevTheme) => {
       const newTheme = prevTheme === 'dark' ? 'light' : 'dark';
