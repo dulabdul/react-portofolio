@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Lightbox from 'react-image-lightbox';
 import Button from '../elements/Button';
 import 'react-image-lightbox/style.css';

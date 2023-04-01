@@ -16,7 +16,7 @@ function App() {
       return newTheme;
     });
   };
-  const [toggleTheme, setToggleTheme] = useState(() => toggleThemeHandler);
+  const [toggleTheme] = useState(() => toggleThemeHandler);
   const localeContextValue = useMemo(() => {
     return {
       localeTheme,
